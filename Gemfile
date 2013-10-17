@@ -8,6 +8,7 @@ gem 'rails', '3.2.9'
 gem 'sqlite3'
 
 gem 'pages'
+gem 'coderay', require: 'coderay'
 
 
 # Gems used only for assets and not required
