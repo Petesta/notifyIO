@@ -1,0 +1,25 @@
+<div class="container cheeky-mocks">
+  <div class="header">dashboard</div>
+  <div class="row">
+    <div class="span-16 y-20">
+      <%= link_to 'settings', settings_mock_path, class: 'button', style: 'float:right;' %>
+      <p>FakeCo's Dashboard</p>
+
+      <div class="row">
+        <div class="span-10 y-14 y-off-2" style="font-size: 0.7em;">
+
+
+          <% (1..12).each do |i| %>
+            <% type = [ ['success', 'green'], ['warning', 'yellow'], ['alert', 'red'] ].shuffle.first %>
+            <div class="span-7 y-1" style="padding: 0px; text-align:left; background-color:<%= type[1] %>" >
+              Notification <%= i %> <div style="float:right;"><%= type[0] %></div>
+            </div>
+            <div class="span-2 y-1" style="padding: 0px; text-align:left;"> <%= (1..60).to_a.shuffle.first %> sec ago</div>
+          <% end %>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
