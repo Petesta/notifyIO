@@ -7232,3 +7232,2930 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-21 16:33:28 -0700
 Served asset /border.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 17:51:28 -0700
+Connecting to database specified by database.yml
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (2.2ms)
+Compiled session.css  (6ms)  (pid 10017)
+Compiled users.css  (1ms)  (pid 10017)
+Compiled application.css  (14ms)  (pid 10017)
+Compiled jquery.js  (24ms)  (pid 10017)
+Compiled jquery_ujs.js  (0ms)  (pid 10017)
+Compiled session.js  (166ms)  (pid 10017)
+Compiled users.js  (99ms)  (pid 10017)
+Compiled application.js  (309ms)  (pid 10017)
+Completed 200 OK in 386ms (Views: 385.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /cheeky.min.css - 200 OK (3ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /session.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /session.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /application.js - 200 OK (28ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-23 17:51:29 -0700
+Served asset /border.png - 200 OK (2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to DeviseCreateUsers (20131024005702)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20131024005702')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:02:50 -0700
+
+RuntimeError (Devise.secret_key was not set. Please add the following to your Devise initializer:
+
+  config.secret_key = 'fe5347f1dd4f517ff05d901248d218bc19ca9b3cb0aa40efa895959e7866955f9a6232ba28f37a6083cfa8ce8201f5b46510886c4192b1e0c2dfc6657acac0ce'
+
+Please ensure you restarted your application after installing Devise or setting the key.
+):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/devise-3.1.1/app/views/devise/shared/_links.erb (1.4ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/devise-3.1.1/app/views/devise/sessions/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 91ms (Views: 36.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Served asset /application.css - 200 OK (31ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Served asset /cheeky.min.css - 200 OK (1ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Served asset /session.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Served asset /session.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:04:35 -0700
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:04:44 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/devise-3.1.1/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/devise-3.1.1/app/views/devise/registrations/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:04:48 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/devise-3.1.1/app/views/devise/shared/_links.erb (0.2ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/devise-3.1.1/app/views/devise/registrations/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:06:04 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:06:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:06:05 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:06:05 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:06:05 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:05 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:05 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:05 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Served asset /cheeky.min.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Served asset /session.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Served asset /session.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:06:06 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:06:16 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:06:27 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:06:46 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 50ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /cheeky.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:09 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-10-23 18:07:12 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:07:19 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:10:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"65uszW1KTmtzQ8n7nV2OVloXpqam9iIMuJWu8CuzBng=", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@admin.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 93ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-10-23 18:11:09 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"65uszW1KTmtzQ8n7nV2OVloXpqam9iIMuJWu8CuzBng=", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'admin@admin.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (4.2ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 24 Oct 2013 01:11:09 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "admin@admin.com"], ["encrypted_password", "$2a$10$7d.XKUCSLICC8Ud2/lNa7Ol/5yo6tBYuQa.DSHDQBq4BtnYj5e0Xa"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Thu, 24 Oct 2013 01:11:09 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-10-24 01:11:09.927567', "current_sign_in_at" = '2013-10-24 01:11:09.927567', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-10-24 01:11:09.928241' WHERE "users"."id" = 1[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 84ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:11:09 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:11:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:11:09 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:11:09 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:11:09 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:10 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:10 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:11:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2013-10-23 18:11:55 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-10-23 18:12:20 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:12:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-23 18:12:24 -0700
+Served asset /border.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup_mock" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Processing by PagesController#signup_mock as HTML
+  Rendered pages/signup_mock.html.erb within layouts/application (0.8ms)
+  Rendered shared/_nav.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-23 18:15:44 -0700
+Served asset /border.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.7ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 6ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:16 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.8ms)
+  Rendered shared/_nav.html.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:17:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.7ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:18:45 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.7ms)
+  Rendered shared/_nav.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:46 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:46 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:18:46 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:46 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:46 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:18:46 -0700
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:19:37 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (stack level too deep):
+  app/controllers/application_controller.rb:7
+
+
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (23.7ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Served asset /session.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:19:52 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (15.6ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:08 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (15.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Served asset /application.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Served asset /cheeky.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (26.0ms)
+Completed 200 OK in 85ms (Views: 83.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Served asset /cheeky.min.css - 200 OK (23ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Served asset /session.css - 200 OK (1ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Served asset /session.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:20:37 -0700
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:20:53 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-23 18:21:09 -0700
+Served asset /border.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:21:12 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:21:13 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:21:13 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:21:13 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:21:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:21:13 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Served asset /cheeky.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:21:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (15.8ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:22:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.7ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:24:25 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:26:16 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"65uszW1KTmtzQ8n7nV2OVloXpqam9iIMuJWu8CuzBng="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 39ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:05 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 6ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Served asset /cheeky.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Served asset /session.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:27:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IEQMXb34FTaVrmApLJ3F3fFMuVuMmEf5mFxss2LTe5A=", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@admin.com' LIMIT 1[0m
+Completed 401 Unauthorized in 68ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IEQMXb34FTaVrmApLJ3F3fFMuVuMmEf5mFxss2LTe5A=", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered shared/_nav.html.erb (0.2ms)
+Completed 200 OK in 75ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IEQMXb34FTaVrmApLJ3F3fFMuVuMmEf5mFxss2LTe5A=", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@admin.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = '2013-10-24 01:28:09.288159', "sign_in_count" = 2, "updated_at" = '2013-10-24 01:28:09.292313' WHERE "users"."id" = 1
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 79ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Served asset /cheeky.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:09 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup_mock" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Processing by PagesController#signup_mock as HTML
+  Rendered pages/signup_mock.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /cheeky.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-23 18:28:14 -0700
+Served asset /border.png - 304 Not Modified (0ms)
+
+
+Started GET "/signup_mock" for 127.0.0.1 at 2013-10-23 18:28:21 -0700
+Processing by PagesController#signup_mock as HTML
+  Rendered pages/signup_mock.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:22 -0700
+Served asset /cheeky.min.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:22 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:22 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:22 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:22 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:22 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8nsjSDtwWD1ysxOymOgUCbJP1/i0ltQWz3XjgTA8ZkY="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 5ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:24 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup_mock" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Processing by PagesController#signup_mock as HTML
+  Rendered pages/signup_mock.html.erb within layouts/application (0.3ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 5ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:25 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:28:29 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:30 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:30 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:30 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:30 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:30 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:30 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4vd0ZPGEKYKOA3r4D0FubgZNmXcofJ7DzMpLb3lzw/E=", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin@admin.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-10-24 01:28:09.288159', "current_sign_in_at" = '2013-10-24 01:28:37.850504', "sign_in_count" = 3, "updated_at" = '2013-10-24 01:28:37.851161' WHERE "users"."id" = 1
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 74ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Served asset /cheeky.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:28:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r7pHAJRsPxVQAKYsM6hTGWFgYWp2FgGIkJ790hrZcjU="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Served asset /application.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:04 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup_mock" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Processing by PagesController#signup_mock as HTML
+  Rendered pages/signup_mock.html.erb within layouts/application (0.3ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:08 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/dashboard_mock" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Processing by PagesController#dashboard_mock as HTML
+  Rendered pages/dashboard_mock.html.erb within layouts/application (1.4ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-23 18:29:15 -0700
+Served asset /border.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup_mock" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Processing by PagesController#signup_mock as HTML
+  Rendered pages/signup_mock.html.erb within layouts/application (0.3ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:29:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup_mock" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Processing by PagesController#signup_mock as HTML
+  Rendered pages/signup_mock.html.erb within layouts/application (0.2ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Served asset /cheeky.min.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/dashboard_mock" for 127.0.0.1 at 2013-10-23 18:30:06 -0700
+Processing by PagesController#dashboard_mock as HTML
+  Rendered pages/dashboard_mock.html.erb within layouts/application (0.9ms)
+  Rendered shared/_nav.html.erb (0.5ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_nav.html.erb (0.3ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:09 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-10-23 18:30:10 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.8ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:10 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:10 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:10 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:11 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:11 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q6KGSvxD7/pYa8SpJynCzkfS1Dgkl+Jt7BKxQMjw5qU=", "user"=>{"email"=>"pete@pete.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'pete@pete.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 24 Oct 2013 01:30:26 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "pete@pete.com"], ["encrypted_password", "$2a$10$b82xt8VBHTnTKmBdHzVZiOg/9otfcdnGA4G8Rk.UTpXSTC.3izvOO"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Thu, 24 Oct 2013 01:30:26 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-10-24 01:30:26.369869', "current_sign_in_at" = '2013-10-24 01:30:26.369869', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-10-24 01:30:26.370260' WHERE "users"."id" = 2[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 109ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Served asset /session.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q6KGSvxD7/pYa8SpJynCzkfS1Dgkl+Jt7BKxQMjw5qU="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Served asset /cheeky.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:31 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8fagcWADnc4Yf4e+xMca4Oii6M/Xk3DAvLzxeHZTPo4=", "user"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@admin.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-10-24 01:28:37.850504', "current_sign_in_at" = '2013-10-24 01:30:43.129164', "sign_in_count" = 4, "updated_at" = '2013-10-24 01:30:43.129824' WHERE "users"."id" = 1[0m
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 74ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-23 18:30:43 -0700
+Served asset /border.png - 304 Not Modified (0ms)
+
+
+Started GET "/signup_mock" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Processing by PagesController#signup_mock as HTML
+  Rendered pages/signup_mock.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-23 18:30:55 -0700
+Served asset /border.png - 304 Not Modified (0ms)
