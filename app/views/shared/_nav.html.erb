@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="span-12">
 		<% if user_signed_in? %>
-			Current User: <%= current_user.email %> | <%= link_to("Logout",destroy_user_session_path, :method => :delete)%>
+          Current User: <%= current_user.email %> | <font color="white"> <%= link_to("Logout",destroy_user_session_path, :method => :delete)%> </font>
 
 			<%= link_to("My Account", user_path(current_user)) %>
 		<% else %>
@@ -9,5 +9,4 @@
 		<% end %>
 	</div>
 	<div class="span-4"></div>
-
 </div>

@@ -11837,3 +11837,1174 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-23 19:34:00 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 12:57:56 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (57.5ms)
+Completed 200 OK in 132ms (Views: 128.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 12:57:56 -0700
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 12:57:56 -0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 12:57:56 -0700
+Served asset /font-awesome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 12:57:56 -0700
+Served asset /session.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 12:57:56 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 12:57:56 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 12:57:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 12:57:57 -0700
+Served asset /session.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 12:57:57 -0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 12:57:57 -0700
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-24 12:57:57 -0700
+Served asset /border.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.8ms)
+Compiled nav.css  (7ms)  (pid 13424)
+Compiled application.css  (14ms)  (pid 13424)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /cheeky.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /nav.css - 200 OK (1ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:07:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+Compiled nav.css  (3ms)  (pid 13424)
+Compiled application.css  (2ms)  (pid 13424)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.4ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /nav.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:10:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+Compiled nav.css  (3ms)  (pid 13424)
+Compiled application.css  (2ms)  (pid 13424)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /nav.css - 200 OK (1ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:15 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:12:16 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+Compiled nav.css  (5ms)  (pid 13424)
+Compiled application.css  (2ms)  (pid 13424)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (2.1ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /application.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /nav.css - 200 OK (2ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:15:18 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:16:29 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /cheeky.min.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:16:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:17:05 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.7ms)
+ERROR: compiling _app_views_shared__nav_html_erb__3443474880589046306_70213106364360 RAISED /Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:6: syntax error, unexpected '<', expecting ')'
+...tput_buffer.append= ( link_to(<font color="white"> "My Accou...
+...                               ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:10: unknown regexp options - dv
+unmatched close parenthesis: /font>, user_path(current_user)) );@output_buffer.safe_concat('
+');		 else 
+@output_buffer.safe_concat('			');@output_buffer.append= ( link_to("Login",new_user_session_path) );@output_buffer.safe_concat('
+');		 end 
+@output_buffer.safe_concat('	</i
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:11: syntax error, unexpected '<'
+	<div class="span-4"></div>
+	 ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:11: syntax error, unexpected '<'
+	<div class="span-4"></div>
+	                     ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:12: unknown regexp options - dv
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:13: unterminated string meets end of file
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+Function body:           def _app_views_shared__nav_html_erb__3443474880589046306_70213106364360(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "shared/_nav";_old_output_buffer = @output_buffer;nav = local_assigns[:nav];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="row">
+	<div class="span-12">
+');		 if user_signed_in? 
+@output_buffer.safe_concat('          Current User: ');@output_buffer.append= ( current_user.email );@output_buffer.safe_concat(' | <font color="white"> ');@output_buffer.append= ( link_to("Logout",destroy_user_session_path, :method => :delete));@output_buffer.safe_concat(' </font>
+
+          ');@output_buffer.append= ( link_to(<font color="white"> "My Account" </font>, user_path(current_user)) );@output_buffer.safe_concat('
+');		 else 
+@output_buffer.safe_concat('			');@output_buffer.append= ( link_to("Login",new_user_session_path) );@output_buffer.safe_concat('
+');		 end 
+@output_buffer.safe_concat('	</div>
+	<div class="span-4"></div>
+</div>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `module_eval'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `compile'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:244:in `block in compile!'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:232:in `synchronize'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:232:in `compile!'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:144:in `block in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:125:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:143:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:15:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/helpers/rendering_helper.rb:24:in `render'
+/Users/Petesta/Git/notifyIO/app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___1615083421467691096_70213108211840'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:145:in `block in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:125:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:143:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:414:in `_run__2620385883837761624__process_action__2567204102681243248__callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:121:in `process'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal.rb:246:in `block in action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.9/lib/active_record/query_cache.rb:64:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `_run__2366326025296156504__call__141629337290866952__callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/engine.rb:479:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/application.rb:223:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered shared/_nav.html.erb (3.3ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:6: syntax error, unexpected '<', expecting ')'
+...tput_buffer.append= ( link_to(<font color="white"> "My Accou...
+...                               ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:10: unknown regexp options - dv
+unmatched close parenthesis: /font>, user_path(current_user)) );@output_buffer.safe_concat('
+');		 else 
+@output_buffer.safe_concat('			');@output_buffer.append= ( link_to("Login",new_user_session_path) );@output_buffer.safe_concat('
+');		 end 
+@output_buffer.safe_concat('	</i
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:11: syntax error, unexpected '<'
+	<div class="span-4"></div>
+	 ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:11: syntax error, unexpected '<'
+	<div class="span-4"></div>
+	                     ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:12: unknown regexp options - dv
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:13: unterminated string meets end of file
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:13: syntax error, unexpected end-of-input, expecting ')'):
+    3: 		<% if user_signed_in? %>
+    4:           Current User: <%= current_user.email %> | <font color="white"> <%= link_to("Logout",destroy_user_session_path, :method => :delete)%> </font>
+    5: 
+    6:           <%= link_to(<font color="white"> "My Account" </font>, user_path(current_user)) %>
+    7: 		<% else %>
+    8: 			<%= link_to("Login",new_user_session_path) %>
+    9: 		<% end %>
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___1615083421467691096_70213108211840'
+
+
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:17:06 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.5ms)
+ERROR: compiling _app_views_shared__nav_html_erb__3443474880589046306_70213106364360 RAISED /Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:6: syntax error, unexpected '<', expecting ')'
+...tput_buffer.append= ( link_to(<font color="white"> "My Accou...
+...                               ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:10: unknown regexp options - dv
+unmatched close parenthesis: /font>, user_path(current_user)) );@output_buffer.safe_concat('
+');		 else 
+@output_buffer.safe_concat('			');@output_buffer.append= ( link_to("Login",new_user_session_path) );@output_buffer.safe_concat('
+');		 end 
+@output_buffer.safe_concat('	</i
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:11: syntax error, unexpected '<'
+	<div class="span-4"></div>
+	 ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:11: syntax error, unexpected '<'
+	<div class="span-4"></div>
+	                     ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:12: unknown regexp options - dv
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:13: unterminated string meets end of file
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:13: syntax error, unexpected end-of-input, expecting ')'
+Function body:           def _app_views_shared__nav_html_erb__3443474880589046306_70213106364360(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "shared/_nav";_old_output_buffer = @output_buffer;nav = local_assigns[:nav];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div class="row">
+	<div class="span-12">
+');		 if user_signed_in? 
+@output_buffer.safe_concat('          Current User: ');@output_buffer.append= ( current_user.email );@output_buffer.safe_concat(' | <font color="white"> ');@output_buffer.append= ( link_to("Logout",destroy_user_session_path, :method => :delete));@output_buffer.safe_concat(' </font>
+
+          ');@output_buffer.append= ( link_to(<font color="white"> "My Account" </font>, user_path(current_user)) );@output_buffer.safe_concat('
+');		 else 
+@output_buffer.safe_concat('			');@output_buffer.append= ( link_to("Login",new_user_session_path) );@output_buffer.safe_concat('
+');		 end 
+@output_buffer.safe_concat('	</div>
+	<div class="span-4"></div>
+</div>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `module_eval'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:297:in `compile'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:244:in `block in compile!'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:232:in `synchronize'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:232:in `compile!'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:144:in `block in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:125:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:143:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:15:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/helpers/rendering_helper.rb:24:in `render'
+/Users/Petesta/Git/notifyIO/app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___1615083421467691096_70213108211840'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:145:in `block in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:125:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/template.rb:143:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:414:in `_run__2620385883837761624__process_action__2567204102681243248__callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.9/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/base.rb:121:in `process'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_controller/metal.rb:246:in `block in action'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.9/lib/active_record/query_cache.rb:64:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `_run__2366326025296156504__call__141629337290866952__callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/rack/logger.rb:16:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.9/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/engine.rb:479:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/application.rb:223:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/railties-3.2.9/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:6: syntax error, unexpected '<', expecting ')'
+...tput_buffer.append= ( link_to(<font color="white"> "My Accou...
+...                               ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:10: unknown regexp options - dv
+unmatched close parenthesis: /font>, user_path(current_user)) );@output_buffer.safe_concat('
+');		 else 
+@output_buffer.safe_concat('			');@output_buffer.append= ( link_to("Login",new_user_session_path) );@output_buffer.safe_concat('
+');		 end 
+@output_buffer.safe_concat('	</i
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:11: syntax error, unexpected '<'
+	<div class="span-4"></div>
+	 ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:11: syntax error, unexpected '<'
+	<div class="span-4"></div>
+	                     ^
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:12: unknown regexp options - dv
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:13: unterminated string meets end of file
+/Users/Petesta/Git/notifyIO/app/views/shared/_nav.html.erb:13: syntax error, unexpected end-of-input, expecting ')'):
+    3: 		<% if user_signed_in? %>
+    4:           Current User: <%= current_user.email %> | <font color="white"> <%= link_to("Logout",destroy_user_session_path, :method => :delete)%> </font>
+    5: 
+    6:           <%= link_to(<font color="white"> "My Account" </font>, user_path(current_user)) %>
+    7: 		<% else %>
+    8: 			<%= link_to("Login",new_user_session_path) %>
+    9: 		<% end %>
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___1615083421467691096_70213108211840'
+
+
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Petesta/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.5ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /cheeky.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:17:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /cheeky.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:20 -0700
+Served asset /application.js - 304 Not Modified (28ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:21:26 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.4ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:21:27 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:24 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-24 13:26:54 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.8ms)
+Compiled nav.css  (3ms)  (pid 13424)
+Compiled application.css  (2ms)  (pid 13424)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /nav.css - 200 OK (1ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)

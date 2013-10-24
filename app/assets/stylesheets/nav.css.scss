@@ -1,0 +1,17 @@
+html, body { height: 100%; }
+
+header {
+  background-color: black;
+  height: 55px;
+  margin-bottom: 15px;
+  padding: 5px;
+
+  .row {
+    color: white;
+    display: inline-block;
+  }
+
+  a {
+    color: white;
+  }
+}
