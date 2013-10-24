@@ -1,6 +1,8 @@
 NotifyIO::Application.routes.draw do
   devise_for :users
 
+  resources :users, only: [:show]
+
   # get "users/new"
 
   # get "users/index"

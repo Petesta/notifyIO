@@ -1,28 +1,10 @@
 class UsersController < ApplicationController
-  def new
-    @user = User.new
-    raise
-  end
-
   def index
     @users = User.all
   end
 
-  def create
-    @user = User.new(params[:id])
-
-    if @user.save
-      flash[:success] = "Successful"
-      # redirect_to
-    else
-      flash.now[:error] = "Something went wrong!"
-      render :new
-    end
-
-  end
-
   def show
-    @user = User.find(params[:id])
+    @user = current_user
   end
 
   def edit

@@ -9,3 +9,10 @@
 	u = User.new(email: "admin_#{n}@admin.com", password: 'adminadmin')
 	puts "Created user #{n}!" if u.save
 end
+
+('a'..'d').to_a.each do |n|
+	o = Organization.new(name: "Organization #{n}", description: 'Fancy description of my organization')
+	puts "Created organization #{n}!" if o.save
+	o.users << User.first(4)
+end
+
