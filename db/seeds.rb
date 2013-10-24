@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+('a'..'d').to_a.each do |n|
+	u = User.new(email: "admin_#{n}@admin.com", password: 'adminadmin')
+	puts "Created user #{n}!" if u.save
+end
