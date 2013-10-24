@@ -1,6 +1,15 @@
 # Ignore all logfiles and tempfiles
-/log/*.log
-/tmp
+db/*.sqlite3
+intermediate
+log/*.log
+publish
+tmp/
+.hg
+.svn
+.CVS
+.idea
+.bundle
+.sass-cache/
 
 # Ignore all .swp files from Vim
 .*.swp
