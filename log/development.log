@@ -13008,3 +13008,63 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 13:26:55 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (3.8ms)
+  [1m[35mUser Load (1.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered shared/_nav.html.erb (87.1ms)
+Completed 200 OK in 113ms (Views: 110.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-25 14:08:38 -0700
+Served asset /border.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

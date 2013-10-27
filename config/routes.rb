@@ -1,4 +1,18 @@
 NotifyIO::Application.routes.draw do
+  get "organizations/new"
+
+  get "organizations/index"
+
+  get "organizations/create"
+
+  get "organizations/show"
+
+  get "organizations/edit"
+
+  get "organizations/update"
+
+  get "organizations/destroy"
+
   devise_for :users
 
   resources :users, only: [:show]
