@@ -10,7 +10,8 @@ group :development do
   gem 'sqlite3'
 end
 
-gem 'mysql2'
+gem 'sqlite3'
+gem 'mysql2', group: :production
 gem 'rails_12factor', group: :production
 
 gem 'pages'
