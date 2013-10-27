@@ -1,0 +1,8 @@
+<h1>My Account!</h1>
+<h3><strong>Email:</strong> <%= @user.email %> </h3>
+
+<h1>Organizations:</h1>
+
+<% @user.organizations.each do |org| %>
+	<h1> <%= org.name %> </h1>
+<% end %>

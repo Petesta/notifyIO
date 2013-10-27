@@ -1,4 +1,22 @@
 NotifyIO::Application.routes.draw do
+  devise_for :users
+
+  resources :users, only: [:show]
+
+  # get "users/new"
+
+  # get "users/index"
+
+  # get "users/create"
+
+  # get "users/show"
+
+  # get "users/edit"
+
+  # get "users/update"
+
+  # get "users/destroy"
+
   root to: "pages#splash_mock"
 
   # Static pages
