@@ -8,12 +8,15 @@
 	<%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-	<div class="container">
+	<header>
 		<%= render partial: 'shared/nav' %>
-		<p class="notice"><%= notice %></p>
-		<p class="alert"><%= alert %></p>
-  </header>
+	</header>
+
+	<div class="container">
+
+		<p class="notice"><%= flash[:notice] %></p>
+		<p class="alert"><%= flash[:alert] %> </p>
+
 		<%= yield %>
 	</div>
 </body>

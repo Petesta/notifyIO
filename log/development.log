@@ -15386,3 +15386,2785 @@ Served asset /organizations.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:38:49 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mOrganization Load (0.3ms)[0m  SELECT "organizations".* FROM "organizations" INNER JOIN "subscriptions" ON "organizations"."id" = "subscriptions"."organization_id" WHERE "subscriptions"."user_id" = 1
+  Rendered users/show.html.erb within layouts/application (29.9ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 41.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-10-27 17:44:13 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WdQXwcmG4A70kItoiw454F3wFFOdKFzeoe2WG3aO24Y="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:44:13 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.0ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:14 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/organizations/new" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Processing by OrganizationsController#new as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:18 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/organizations/4" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"4"}
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /organizations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:22 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jCYA2ndd0fcCXpeXObtd35XCWeiyfnTUoL38aOOrO44=", "user"=>{"email"=>"admin_a@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'admin_a@admin.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = '2013-10-28 00:44:29.431309', "sign_in_count" = 2, "updated_at" = '2013-10-28 00:44:29.432429' WHERE "users"."id" = 1
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/organizations/4
+Completed 302 Found in 116ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/organizations/4" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mOrganization Load (0.2ms)[0m  [1mSELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 4
+  Rendered organizations/show.html.erb within layouts/application (4.7ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:44:29 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/organizations/4" for 127.0.0.1 at 2013-10-27 17:46:03 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mOrganization Load (0.3ms)[0m  SELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 4[0m
+  Rendered organizations/show.html.erb within layouts/application (10.6ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 5117ms (Views: 24.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:46:08 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/organizations/4" for 127.0.0.1 at 2013-10-27 17:52:42 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 114ms
+
+NoMethodError (undefined method `users' for nil:NilClass):
+  app/controllers/organizations_controller.rb:42:in `user_has_access?'
+
+
+  Rendered /Users/MichaelHolubowski/.rvm/gems/ruby-2.0.0-p247@mygemset/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/MichaelHolubowski/.rvm/gems/ruby-2.0.0-p247@mygemset/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/MichaelHolubowski/.rvm/gems/ruby-2.0.0-p247@mygemset/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/organizations/4" for 127.0.0.1 at 2013-10-27 17:53:09 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 42ms
+
+NoMethodError (undefined method `find' for nil:NilClass):
+  app/controllers/organizations_controller.rb:42:in `user_has_access?'
+
+
+  Rendered /Users/MichaelHolubowski/.rvm/gems/ruby-2.0.0-p247@mygemset/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/MichaelHolubowski/.rvm/gems/ruby-2.0.0-p247@mygemset/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/MichaelHolubowski/.rvm/gems/ruby-2.0.0-p247@mygemset/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (67.6ms)
+
+
+Started GET "/organizations/4" for 127.0.0.1 at 2013-10-27 17:53:27 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mOrganization Load (0.2ms)[0m  [1mSELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 4 AND "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 4
+  Rendered organizations/show.html.erb within layouts/application (2.8ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 15.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:28 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mOrganization Load (0.3ms)[0m  SELECT "organizations".* FROM "organizations" INNER JOIN "subscriptions" ON "organizations"."id" = "subscriptions"."organization_id" WHERE "subscriptions"."user_id" = 1
+  Rendered users/show.html.erb within layouts/application (66.7ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 82ms (Views: 79.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/organizations/5" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mOrganization Load (0.2ms)[0m  SELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 5 AND "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 5[0m
+  Rendered organizations/show.html.erb within layouts/application (1.6ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 21ms (Views: 12.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:41 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sONhj02FYyq/wNOGVuFMp+1iz2ByBZZpru5yOJZ17BE="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:44 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.3ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-27 17:53:52 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I5ONNkOOWn1IVY7OoUpU/9WTxmAJ/wxMdwU0eDkNC+c=", "user"=>{"email"=>"admin_b@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin_b@admin.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-10-28 00:53:52.888427', "current_sign_in_at" = '2013-10-28 00:53:52.888427', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-10-28 00:53:52.889533' WHERE "users"."id" = 2[0m
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 197ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:53:52 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.3ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-10-27 17:53:54 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mOrganization Load (0.3ms)[0m  [1mSELECT "organizations".* FROM "organizations" INNER JOIN "subscriptions" ON "organizations"."id" = "subscriptions"."organization_id" WHERE "subscriptions"."user_id" = 2[0m
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/organizations/4" for 127.0.0.1 at 2013-10-27 17:53:55 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mOrganization Load (0.2ms)[0m  [1mSELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 4 AND "users"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 4
+  Rendered organizations/show.html.erb within layouts/application (2.0ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 18ms (Views: 12.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/organizations/5" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mOrganization Load (0.3ms)[0m  SELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 5 AND "users"."id" = 2 LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :user_has_access? rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:53:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup_mock" for 127.0.0.1 at 2013-10-27 17:54:38 -0700
+Processing by PagesController#signup_mock as HTML
+  Rendered pages/signup_mock.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.6ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-27 17:54:39 -0700
+Served asset /border.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-10-27 17:54:44 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hlJWLiWBYrxtkXmAD/d1bioQCAB2VaN5H395VA9rq5I="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:54:44 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:45 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:54:47 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ovUahii/aCNMy2Ktd4Uri28CiTU/ctE2SnwhhBwfRM0=", "user"=>{"email"=>"admin_b@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin_b@admin.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = '2013-10-28 00:58:02.569405', "sign_in_count" = 2, "updated_at" = '2013-10-28 00:58:02.571161' WHERE "users"."id" = 2[0m
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 151ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (3.1ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:02 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:03 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/organizations/1" for 127.0.0.1 at 2013-10-27 17:58:08 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mOrganization Load (0.2ms)[0m  [1mSELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 1 AND "users"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 1
+  Rendered organizations/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 45ms (Views: 18.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:08 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:09 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/organizations/5" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Processing by OrganizationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mOrganization Load (0.2ms)[0m  SELECT "organizations".* FROM "organizations" WHERE "organizations"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" INNER JOIN "subscriptions" ON "users"."id" = "subscriptions"."user_id" WHERE "subscriptions"."organization_id" = 5 AND "users"."id" = 2 LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :user_has_access? rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered shared/_nav.html.erb (2.4ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:58:10 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:59:39 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (103.5ms)
+Completed 200 OK in 116ms (Views: 114.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.0ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:44 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-10-27 17:59:47 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:59:47 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.7ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (1.8ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 17:59:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-27 18:00:37 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 15821ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.3ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /organizations.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:00:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-10-27 18:00:56 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 23179ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (38.4ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:20 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-27 18:01:24 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 1922ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.4ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:27 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:27 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mOrganization Load (0.2ms)[0m  [1mSELECT "organizations".* FROM "organizations" INNER JOIN "subscriptions" ON "organizations"."id" = "subscriptions"."organization_id" WHERE "subscriptions"."user_id" = 2[0m
+  Rendered users/show.html.erb within layouts/application (25.7ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 61ms (Views: 37.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:01:35 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-10-27 18:04:14 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mOrganization Load (0.2ms)[0m  [1mSELECT "organizations".* FROM "organizations" INNER JOIN "subscriptions" ON "organizations"."id" = "subscriptions"."organization_id" WHERE "subscriptions"."user_id" = 2[0m
+  Rendered users/show.html.erb within layouts/application (37.6ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 53.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:15 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.5ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:20 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered shared/_nav.html.erb (2.6ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:04:33 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.5ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered shared/_nav.html.erb (2.5ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:13 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:05:21 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (2.9ms)
+Completed 200 OK in 85ms (Views: 84.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:21 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:21 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:22 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered shared/_nav.html.erb (2.5ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-10-27 18:05:45 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mOrganization Load (0.3ms)[0m  SELECT "organizations".* FROM "organizations" INNER JOIN "subscriptions" ON "organizations"."id" = "subscriptions"."organization_id" WHERE "subscriptions"."user_id" = 2
+  Rendered users/show.html.erb within layouts/application (4.6ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:46 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:05:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mOrganization Load (0.2ms)[0m  SELECT "organizations".* FROM "organizations" INNER JOIN "subscriptions" ON "organizations"."id" = "subscriptions"."organization_id" WHERE "subscriptions"."user_id" = 2
+  Rendered users/show.html.erb within layouts/application (26.2ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 37.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered shared/_nav.html.erb (2.7ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border.png" for 127.0.0.1 at 2013-10-27 18:06:06 -0700
+Served asset /border.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :is_correct_user? rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  Rendered shared/_nav.html.erb (2.2ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:09 -0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Processing by PagesController#splash_mock as HTML
+  Rendered pages/splash_mock.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  Rendered shared/_nav.html.erb (37.1ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/nav.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /nav.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /organizations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cheeky.min.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /cheeky.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /session.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/organizations.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /organizations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/session.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /session.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-27 18:06:34 -0700
+Served asset /users.js - 304 Not Modified (0ms)
