@@ -45,24 +45,28 @@ class SubscriptionsController < ApplicationController
 #    dot_com = params[:format].to_s
 #    email = params[:user_email].to_s + "." + dot_com
 
-    binding.pry
+#    binding.pry
     user_id = params[:user_id]
     org_id = params[:organization_id]
-    user = User.find(user_id)
-    org = Organization.find(org_id)
+    user = User.find(user_id) if User.exists?(user_id)
+    org = Organization.find(org_id) if Organization.exists?(org_id)
 
 
     if user.nil?
       binding.pry
       flash[:alert] = 'That user does not exist!'
+    elsif org.nil?
+      flash[:alert] = 'That organization does not exist!'
+      redirect_to user_path(current_user)
+      return #o/w we redirect to org path later
     elsif org.users.include?(user)
       flash[:alert] = 'That user is already in this organization'
     else
       org.users << user
       flash[:notice] = "User #{user.email} added!"
     end
-
     redirect_to organization_path(org)
+
   end
 
   private
