@@ -1,6 +1,6 @@
 class OrganizationsController < ApplicationController
   before_filter :authenticate_user!
-  before_filter :user_has_access?
+  before_filter :user_has_access?, :except => [:new, :show]
 
   def new
     @organization = Organization.new
