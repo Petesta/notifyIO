@@ -38,6 +38,21 @@ class OrganizationsController < ApplicationController
     redirect_to root
   end
 
+  def add_user
+    new_user = User.find_by_email(params[:user_email])
+
+    if new_user.nil?
+      flash[:alert] = 'That user does not exist!'
+    elsif @organization.users.include?(new_user)
+      flash[:alert] = 'That user is already in this organization'
+    else
+      @organization.users << new_user
+      flash[:notice] = "User #{new_user.email} added!"
+    end
+
+    redirect_to organization_path(@organization)
+  end
+
   private
 
   def user_has_access?
