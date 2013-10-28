@@ -1,14 +1,17 @@
-<div class="row">
-	<div class="span-6 offset-14">
-		<% if user_signed_in? %>
-          Current User: <%= current_user.email %> | <font color="white"> <%= link_to("Logout",destroy_user_session_path, :method => :delete)%> </font>
+<div class="container">
 
-			<%= link_to("My Account", user_path(current_user)) %>
-		<% else %>
-			<%= link_to("Login",new_user_session_path) %>
-		<% end %>
-	</div>
-    <div class="span-10">
-      <h1><%= link_to "NotifyIO", "/" %></h1>
-    </div>
+  <div class="logo">
+    <h1><%= link_to "NotifyIO", "/" %></h1>
+  </div>
+
+  <div class="user-links">
+    <% if user_signed_in? %>
+      Current User: <%= current_user.email %> | <font color="white"> <%= link_to("Logout",destroy_user_session_path, :method => :delete)%> </font>
+
+        <%= link_to("My Account", user_path(current_user)) %>
+    <% else %>
+        <%= link_to("Login",new_user_session_path) %>
+    <% end %>
+  </div>
+
 </div>
