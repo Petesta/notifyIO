@@ -39,9 +39,19 @@ class OrganizationsController < ApplicationController
   end
 
   def add_user
-    new_user = User.find_by_email(params[:user_email])
+    # hack.  change this to us user id
+    # you cant send a dot in the url without weird shit happening
+    # in this case it marks it as "format" in the params dict.
+    # ... so we'll use that
+    dot_com = params[:format].to_s
+    email = params[:user_email].to_s + "." + dot_com
+
+    new_user = User.find_by_email(email)
+
+
 
     if new_user.nil?
+      binding.pry
       flash[:alert] = 'That user does not exist!'
     elsif @organization.users.include?(new_user)
       flash[:alert] = 'That user is already in this organization'
