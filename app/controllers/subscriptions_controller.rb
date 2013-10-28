@@ -70,7 +70,7 @@ class SubscriptionsController < ApplicationController
   def user_has_access?
     @subscription = Subscription.find(params[:id]) if params[:id]
     return if @subscription.nil?
-   
+
     if !@subscription.user.id != current_user.id
       flash[:error] = "You don't have access!"
       redirect_to root_path

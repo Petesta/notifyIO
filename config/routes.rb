@@ -6,7 +6,7 @@ NotifyIO::Application.routes.draw do
   root to: "pages#splash_mock"
 
   get "/organizations/:id/add_user/:user_email", to: "organizations#add_user"
-  post "/subscriptions/add_user", to: "subscriptions#add_user"
+  post "/subscriptions/add_user", to: "subscriptions#add_user", as: 'add_user_to_organization'
 
 
   # Static pages
