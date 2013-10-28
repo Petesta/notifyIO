@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="span-12">
+	<div class="span-6 offset-14">
 		<% if user_signed_in? %>
           Current User: <%= current_user.email %> | <font color="white"> <%= link_to("Logout",destroy_user_session_path, :method => :delete)%> </font>
 
@@ -8,5 +8,7 @@
 			<%= link_to("Login",new_user_session_path) %>
 		<% end %>
 	</div>
-	<div class="span-4"></div>
+    <div class="span-10">
+      <h1><%= link_to "NotifyIO", "/" %></h1>
+    </div>
 </div>
