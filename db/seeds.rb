@@ -13,6 +13,6 @@ end
 ('a'..'d').to_a.each do |n|
 	o = Organization.new(name: "Organization #{n}", description: 'Fancy description of my organization')
 	puts "Created organization #{n}!" if o.save
-	o.users << User.first(4)
+	o.users << User.first(3)
 end
 

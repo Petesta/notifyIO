@@ -51,10 +51,10 @@ class SubscriptionsController < ApplicationController
       redirect_to user_path(current_user)
       return #o/w we redirect to org path later
     elsif org.users.include?(user)
-      flash[:alert] = 'That user is already in this organization'
+      flash[:notice] = 'That user is already in this organization'
     else
       org.users << user
-      flash[:notice] = "User #{user.email} added!"
+      flash[:success] = "User #{user.email} added!"
     end
     redirect_to organization_path(org)
 
