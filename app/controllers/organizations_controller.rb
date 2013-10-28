@@ -8,10 +8,13 @@ class OrganizationsController < ApplicationController
   end
 
   def create
-    @organization = Organization.new(params[:id])
-    
+    @organization = Organization.new(params[:organization])
+    @organization.users << current_user
+
     if @organization.save
-      flash[:success] = "Successful"
+      # TODO change to success & make flash work
+      flash[:notice] = "Successful"
+      redirect_to organization_path(@organization)
     else
       flash.now[:error] = "Something went wrong!"
       render :new
@@ -19,6 +22,7 @@ class OrganizationsController < ApplicationController
   end
 
   def show
+    @organization = Organization.find(params[:id])
   end
 
   def edit

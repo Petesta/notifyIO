@@ -8,6 +8,7 @@ gem 'devise'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development do
   gem 'sqlite3'
+  gem 'pry'
 end
 
 gem 'sqlite3'
