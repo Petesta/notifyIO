@@ -56,9 +56,10 @@ class OrganizationsController < ApplicationController
   private
 
   def user_has_access?
-    @organization = Organization.find(params[:id])
-
-    unless @organization.users.include?(current_user)
+    @organization = Organization.find(params[:id]) if params[:id]
+    return if @organization.nil?
+   
+    if !@organization.users.include?(current_user)
       flash[:error] = "You don't have access!"
       redirect_to root_path
     end
