@@ -6,7 +6,7 @@
 
   <div class="user-links">
     <% if user_signed_in? %>
-      Current User: <%= current_user.email %> | <font color="white"> <%= link_to("Logout",destroy_user_session_path, :method => :delete)%> </font>
+      <%= current_user.email %> <span class="vert-bar"> | </span> <%= link_to("Logout",destroy_user_session_path, :method => :delete)%>
 
         <%= link_to("My Account", user_path(current_user)) %>
     <% else %>
