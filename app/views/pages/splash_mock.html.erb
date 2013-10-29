@@ -1,15 +1,7 @@
-<div class="container cheeky-mocks">
-  <div class="header">spalsh page</div>
-  <div class="row">
-    <div class="span-12 offset-2 y-12">
-      <p>Welcome to Notify.IO!</p>
-      <%= link_to 'Signup', signup_mock_path, class: 'button' %>
-      <br>
-      <%= link_to 'Login', login_mock_path, class: 'button' %>
-      <br>
-      <br>
-      <%= link_to 'Api Documentation', api_doc_mock_path, class: 'button' %>
-
-    </div>
+<div class="container home">
+  <div class="header">Welcome!</div>
+  <div class="row btn-container">
+    <%= link_to 'login', new_user_session_path, class: 'btn' %>
+    <%= link_to 'signup', new_user_registration_path, class: 'btn' %>
   </div>
 </div>
