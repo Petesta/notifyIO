@@ -25,7 +25,6 @@ class OrganizationsController < ApplicationController
 
   def show
     @organization = Organization.find(params[:id])
-
   end
 
   def edit
@@ -73,4 +72,5 @@ class OrganizationsController < ApplicationController
       redirect_to root_path
     end
   end
+
 end
