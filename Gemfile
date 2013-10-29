@@ -33,6 +33,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'jbuilder'
+
 gem 'jquery-rails'
 
 gem "font-awesome-rails"
