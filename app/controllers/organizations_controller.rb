@@ -25,6 +25,11 @@ class OrganizationsController < ApplicationController
 
   def show
     @organization = Organization.find(params[:id])
+
+    respond_to do |format|
+      format.html
+      format.json { return render json: @organization }
+    end
   end
 
   def edit
