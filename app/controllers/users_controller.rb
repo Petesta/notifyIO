@@ -18,7 +18,7 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:success] = "Successful"
-      # redirect_to
+      redirect_to user_path(@user)
     else
       flash.now[:error] = "Something went wrong!"
       render :new
@@ -28,7 +28,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find(params[:id]).destroy
-    #redirct_to
+    redirct_to root
   end
 
   private

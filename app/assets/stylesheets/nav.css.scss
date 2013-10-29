@@ -8,14 +8,15 @@ header {
 
   .container {
     color: white;
+    font-family: "Helvetica Neue";  
     /*display: inline-block;*/
 
     .logo {
       float: left;
-      font-family: "Helvetica Neue";  
       font-size: 40px;
 
       a {
+        color: white;
         text-decoration: none;
       }
 
@@ -26,13 +27,40 @@ header {
     }
 
     .user-links {
+      color: #9aa9c8;
       float: right;
       margin-left: 10px;
       margin-top: 20px;
-    }
+      
+      .vert-bar {
+        color: white;
+      }
 
-    a {
-      color: white;
+      a {
+        color: #9aa9c8;
+      }
     }
   }
 }
+ 
+html, body { height: 100%; }
+ 
+.container {
+  margin-bottom: -40px;
+  min-height: 100%;
+ 
+  &:after {
+    content: "";
+    display: block;
+  }
+}
+ 
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Helvetica Neue";
+  line-height: 40px;
+  text-align: center;
+}
+ 
+footer, .container:after { height: 40px; }

@@ -32,6 +32,10 @@ GEM
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
     builder (3.0.4)
+    capistrano (3.0.0)
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 0.0.23)
     coderay (1.1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -52,11 +56,15 @@ GEM
       railties (>= 3.2, < 5.0)
     hike (1.2.3)
     i18n (0.6.5)
+    jbuilder (1.5.2)
+      activesupport (>= 3.0.0)
+      multi_json (>= 1.2.0)
     journey (1.0.4)
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
+    kgio (2.8.1)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -65,6 +73,9 @@ GEM
     mime-types (1.25)
     multi_json (1.8.2)
     mysql2 (0.3.13)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.7.0)
     orm_adapter (0.4.0)
     pages (0.2.0)
       rails (> 3.2)
@@ -101,6 +112,7 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
+    raindrops (0.12.0)
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
@@ -119,10 +131,17 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.8)
+    sshkit (1.1.0)
+      net-scp
+      net-ssh
+      term-ansicolor
+    term-ansicolor (1.2.2)
+      tins (~> 0.8)
     thor (0.18.1)
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
+    tins (0.12.0)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -130,17 +149,24 @@ GEM
     uglifier (2.2.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    unicorn (4.6.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
     warden (1.2.3)
       rack (>= 1.0)
+    will_paginate (3.0.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  capistrano
   coderay
   coffee-rails (~> 3.2.1)
   devise
   font-awesome-rails
+  jbuilder
   jquery-rails
   mysql2
   pages
@@ -150,3 +176,5 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
+  unicorn
+  will_paginate
