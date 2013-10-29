@@ -15,7 +15,7 @@ class OrganizationsController < ApplicationController
     @organization.users << current_user
 
     if @organization.save
-      flash[:notice] = "Successful"
+      flash[:success] = "Successful"
       redirect_to organization_path(@organization)
     else
       flash.now[:alert] = "Something went wrong!"
@@ -48,16 +48,14 @@ class OrganizationsController < ApplicationController
 
     new_user = User.find_by_email(email)
 
-
-
     if new_user.nil?
       binding.pry
       flash[:alert] = 'That user does not exist!'
     elsif @organization.users.include?(new_user)
-      flash[:alert] = 'That user is already in this organization'
+      flash[:notice] = 'That user is already in this organization'
     else
       @organization.users << new_user
-      flash[:notice] = "User #{new_user.email} added!"
+      flash[:success] = "User #{new_user.email} added!"
     end
 
     redirect_to organization_path(@organization)
@@ -68,7 +66,7 @@ class OrganizationsController < ApplicationController
   def user_has_access?
     @organization = Organization.find(params[:id]) if params[:id]
     return if @organization.nil?
-   
+
     if !@organization.users.include?(current_user)
       flash[:error] = "You don't have access!"
       redirect_to root_path
