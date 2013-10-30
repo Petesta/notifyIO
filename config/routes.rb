@@ -16,9 +16,7 @@ NotifyIO::Application.routes.draw do
 
   resources :notifications, only: [:create]
 
-  #resources :subscriptions
-
-  root to: "pages#splash_mock"
+  root to: "application#index"
 
   get "/organizations/:id/add_user/:user_email", to: "organizations#add_user"
 #  get "/subscriptions/new", to: "subscriptions#add_user"
@@ -26,6 +24,5 @@ NotifyIO::Application.routes.draw do
   post "/subscriptions/add_user", to: "subscriptions#add_user", as: 'add_user_to_organization'
 
   # Static pages
-  pages :splash_mock, :api_doc_mock, :login_mock, :signup_mock, :dashboard_mock, :settings_mock, :user_mock, :create_organization_mock
 
 end

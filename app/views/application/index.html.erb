@@ -1,0 +1,9 @@
+<div class="container home">
+  <% if current_user.nil? %>
+      <div class="header">Welcome!</div>
+     <%= render partial: "shared/login_or_signup_devise", locals: {resource: resource, resource_name: resource_name} %> 
+  <% else %>
+    <div class="header">Welcome <%= current_user.email %>!</div>
+    <%= render partial: "organizations/list_organizations", locals: {user: current_user} %>
+  <% end %>
+</div>
