@@ -1,9 +1,5 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  name: Org1
-  description: MyText
-
-two:
-  name: Org2
-  description: MyText
+<% 1000.times do |n| %>
+user_<%= n %>
+  name: <%= "user#{n}" %>
+  description: <%= "description for organization #{n}" %>
+<% end %>
