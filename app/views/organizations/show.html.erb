@@ -24,4 +24,6 @@
 
 <hr>
 <h4>Notifications:</h4>
-<%= render partial: 'notifications/notification', collection: @organization.notifications %>
+<div class="notifications-container">
+  <%= render partial: 'notifications/notification', collection: @organization.notifications %>
+</div>

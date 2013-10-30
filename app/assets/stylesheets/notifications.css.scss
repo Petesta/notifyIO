@@ -1,3 +1,27 @@
 // Place all the styles related to the Notifications controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// _notification partial
+.notifications-container {
+
+}
+
+.notification {
+  width: 200px;
+  background-color: #ddd;
+  padding: 5px;
+  margin: 5px;
+
+  &.success {
+    background-color: green;
+  }
+
+  &.alert {
+    background-color: yellow;
+  }
+
+  &.error {
+    background-color: red;
+  }
+}

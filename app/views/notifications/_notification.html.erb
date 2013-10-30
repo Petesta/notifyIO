@@ -1,1 +1,4 @@
-<h1>Notification with id: <%= notification.id %></h1>
+<div class="notification <%= notification.notification_type %>">
+  <div class="type"><%= notification.notification_type %></div>
+  <div class="message"><%= notification.message %></div>
+</div>
