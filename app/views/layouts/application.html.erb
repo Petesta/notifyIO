@@ -8,17 +8,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <%= render partial: 'shared/nav' %>
-  </header>
+  <div class="full-page">
+    <header>
+      <%= render partial: 'shared/nav' %>
+    </header>
 
-  <div class="container">
-    <%= render partial: 'shared/flash', locals: {flash: flash} %>
-    <%= yield %>
-  </div>
+    <div class="container">
+      <%= render partial: 'shared/flash', locals: {flash: flash} %>
+      <%= yield %>
+    </div>
 
-  <footer>
-    Brought to you by Pete Cruz, Mike Holubowski, Mike Sprague
-  </footer>
-</body>
+    <footer>
+      Brought to you by Pete Cruz, Mike Holubowski, Mike Sprague
+    </footer>
+  </body>
+</div>
 </html>
