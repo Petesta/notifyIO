@@ -1,13 +1,6 @@
 <div class="account">
 <div class="title-acct">My Account</div>
 <h3><strong>Email:</strong> <%= @user.email %> </h3>
-<hr>
+<%= render partial: "organizations/list_organizations", locals: {user: @user} %>
 
-<h1>Organizations:</h1>
-<% @user.organizations.each do |org| %>
-  <h1> <%= link_to org.name, organization_path(org) %> </h1>
-<% end %>
-
-<hr>
-<%= link_to "Create organization", new_organization_path %>
 </div>

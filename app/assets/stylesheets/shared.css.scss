@@ -44,6 +44,43 @@
   }
 }
 
+// TODO: Organize me, because I dunno how.
+// This is the CSS for an organizations partial
+.orgs-card {
+  border-radius: 10px;
+  overflow:hidden;
+  .top-header {
+    background-color: #333333;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .org-header {
+    padding: 15px 10px 15px 10px;
+   background: url(organization_details_bg.png) repeat;
+  }
+  .org-header:hover {
+  background: url(organization_details_bg_highlighted.png) repeat;
+  } 
+
+  // because I don't know how to do a separator
+  .padding-hack {
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+  }
+
+  .bottom-footer {
+    background-color: rgb(246, 246, 246);
+    padding: 15px 10px 15px 10px;
+  }
+
+}
+
 .account {
   font-family: "Helvetica Neue";  
   font-size: 1.25em;
