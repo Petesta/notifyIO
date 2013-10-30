@@ -17,3 +17,7 @@
   <%= f.hidden_field :org_id, { value: @organization.id } %>
   <%= f.submit %>
 <% end %>
+
+<hr>
+<h4>Notifications:</h4>
+<%= render partial: 'notifications/notification', collection: @organization.notifications %>
