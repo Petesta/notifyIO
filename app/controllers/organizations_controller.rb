@@ -25,7 +25,7 @@ class OrganizationsController < ApplicationController
 
   def show
     @organization = Organization.find(params[:id])
-    #@organization = Organization.paginate(:page => params[:page], :per_page => 5).order('id DESC')
+    @notifications = @organization.notifications.paginate(:page => params[:page], :per_page => 5).order('id DESC')
   end
 
   def edit
