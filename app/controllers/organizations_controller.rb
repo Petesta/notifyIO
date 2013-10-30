@@ -24,6 +24,7 @@ class OrganizationsController < ApplicationController
   end
 
   def show
+    raise
     @organization = Organization.find(params[:id])
   end
 

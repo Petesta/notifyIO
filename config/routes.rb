@@ -11,8 +11,10 @@ NotifyIO::Application.routes.draw do
   resources :users, only: [:show]
 
   resources :organizations do
-    resources :notifications
+    resources :notifications, only: [:show, :index]
   end
+
+  resources :notifications, only: [:create]
 
   #resources :subscriptions
 

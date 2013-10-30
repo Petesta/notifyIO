@@ -31,6 +31,11 @@ GEM
     arel (3.0.2)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+    better_errors (1.0.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.0.4)
     capistrano (3.0.0)
       i18n
@@ -44,6 +49,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    debug_inspector (0.0.2)
     devise (3.1.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -161,6 +167,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
+  binding_of_caller
   capistrano
   coderay
   coffee-rails (~> 3.2.1)
