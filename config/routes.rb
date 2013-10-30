@@ -1,7 +1,19 @@
 NotifyIO::Application.routes.draw do
+  get "notifications/new"
+
+  get "notifications/create"
+
+  get "notifications/show"
+
+  get "notifications/index"
+
   devise_for :users
   resources :users, only: [:show]
-  resources :organizations
+
+  resources :organizations do
+    resources :notifications
+  end
+
   #resources :subscriptions
 
   root to: "pages#splash_mock"
