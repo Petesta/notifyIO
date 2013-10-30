@@ -3,8 +3,14 @@ class NotificationsController < ApplicationController
   def new
   end
 
-  def create
-
+  def create # Used by api
+    n = @organization.notifications.build(notification_type: params[:notification_type], message: params[:message])
+    if n.save
+      render json: n
+    else
+      render text: 'fuck'
+      # return error message to api client
+    end
   end
 
   def show
@@ -16,7 +22,8 @@ class NotificationsController < ApplicationController
 
   private
   def api_auth
-    unless params[:auth_token] == 'abc'
+    @organization = Organization.find_by_api_key(params[:api_key])
+    unless @organization
       head :unauthorized
     end
   end

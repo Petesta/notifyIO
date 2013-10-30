@@ -6,7 +6,6 @@ one:
   organization_id: 1
 
 two:
-<<<<<<< HEAD
-  notification_type: "shitty" 
+  notification_type: "shitty"
   message: MyText
   organization_id: 1
