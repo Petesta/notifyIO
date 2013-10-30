@@ -25,5 +25,7 @@
 <hr>
 <div class="notification_header"> Notifications: </div>
 <div class="notification_container">
-  <%= render partial: 'notifications/notification', collection: @organization.notifications %>
+  <%= render partial: 'notifications/notification', collection: @notifications %>
 </div>
+
+<%= will_paginate @notifications %>
