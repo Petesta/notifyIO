@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  type: 
+  notification_type:
   message: MyText
   organization_id: 1
 
 two:
-  type: 
+  notification_type:
   message: MyText
   organization_id: 1
