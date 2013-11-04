@@ -28,7 +28,7 @@ def random_notification
 end
 
 Organization.all.each do |org|
-  5.times do
+  10.times do
     org.notifications << random_notification
     puts "Created Notification for organization #{org.id}"
   end

@@ -4,10 +4,9 @@
 <% user.organizations.each do |org| %>
   <div class="org-header"> <%= link_to org.name, organization_path(org) %> </div> 
 <% end %>
+
   <div class="padding-hack"></div>
   <div class="bottom-footer">
-  <%= link_to "Create organization", new_organization_path %>
- </div>
-
-
+    <%= link_to "Create organization", new_organization_path %>
+  </div>
 </div>
