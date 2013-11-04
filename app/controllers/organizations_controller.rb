@@ -71,23 +71,13 @@ class OrganizationsController < ApplicationController
     num_notifications = @organization.notifications.count
 
     respond_to do |format|
-      # client.limi5.offset20
         format.html do 
           val = num_notifications - PAGE_SIZE * (page_number - 1)
           puts val
           
           if PAGE_SIZE * page_number <= @organization.notifications.count
-            puts "rendering page"
-            puts page_number
-            puts page_number * 5 - (page_number - 1) * 5
-            puts @organization.notifications
-            puts @organization.notifications.class
-            puts @organization.notifications.slice(5, 10)
-            puts "blank"
-            puts @organization.notifications[5]
             render partial: "notifications/notification", collection: @organization.notifications.slice((page_number - 1) * 5, 5)
           elsif num_notifications - PAGE_SIZE * (page_number - 1) > 0
-            puts '********************************'
             offset = num_notifications - PAGE_SIZE * (page_number - 1)
             render partial: "notifications/notification", collection: @organization.notifications.slice((page_number - 1) * 5, page_number * 5 - (5 - offset))
           else
@@ -97,8 +87,6 @@ class OrganizationsController < ApplicationController
         end
       end
 
-    puts "i am putting the page number here"
-    puts page_number
   end
 
   private

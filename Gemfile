@@ -3,7 +3,10 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.9'
 
 # Deploy with Capistrano
-gem 'capistrano'
+gem 'capistrano', '~> 3.0.0'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano-rvm', '~> 0.0.3'
 
 gem 'devise'
 
