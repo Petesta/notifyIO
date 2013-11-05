@@ -2,7 +2,7 @@
   <div class="top-header"> Your Organizations:</div>
 
 <% user.organizations.each do |org| %>
-  <div class="org-header"> <%= link_to org.name, organization_path(org) %> </div> 
+  <%= link_to org.name, organization_path(org), class: "org-header" %> 
 <% end %>
 
   <div class="padding-hack"></div>

@@ -62,7 +62,10 @@ full-page {
   .org-header {
     padding: 15px 10px 15px 10px;
    background: url(organization_details_bg.png) repeat;
-  }
+   display: block;
+   color: black;
+   text-decoration: none;
+}
   .org-header:hover {
   background: url(organization_details_bg_highlighted.png) repeat;
   } 
