@@ -7,6 +7,9 @@ $gray-border: #ccc;
 .notification-container {
   border: 1px solid black;
   overflow: scroll;
+  margin: 20px auto;
+  width: 400px;
+  max-height: 500px;
 
   .notifications {
     border: 1px solid black;

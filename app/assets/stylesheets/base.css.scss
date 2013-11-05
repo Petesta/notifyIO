@@ -9,8 +9,9 @@ body {
   position: relative;
 }
 
+// TODO move side-nav to seperate css file
 .side-nav {
-  @include medium-box;
+  @include light-box;
 
   display: inline;
   float: left;
@@ -22,20 +23,33 @@ body {
   .logo {
     text-decoration: none;
     text-align: center;
-    background-color: #ccc;
+    background-color: #ddd;
     box-shadow: inset 0px 0px 6px 0px #aaa;
     color: #404040;
     font-size: 25px;
     display: block;
     padding: 5px 0;
     &:hover {
-      background-color: #ddd;
+      background-color: #fafafa;
+    }
+  }
+
+  .link-container {
+
+    .link {
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      color: #404040;
+      &:hover {
+        background-color: #f0f0f0;
+      }
     }
   }
 }
 
 .main-container {
-  background-color: blue;
+  background-color: #fff;
   display: inline;
   float: left;
   padding-top: 45px;
