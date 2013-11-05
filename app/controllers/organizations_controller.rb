@@ -2,6 +2,8 @@ class OrganizationsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :user_has_access?, :except => [:new, :show]
 
+  PAGE_SIZE = 5
+
   def new
     @organization = Organization.new
   end
@@ -25,7 +27,8 @@ class OrganizationsController < ApplicationController
 
   def show
     @organization = Organization.find(params[:id])
-    @notifications = @organization.notifications.paginate(:page => params[:page], :per_page => 5).order('id DESC')
+    @notifications = @organization.notifications_for_page(1)
+    #@notifications = @organization.notifications.paginate(:page => params[:page], :per_page => 5).order('id DESC')
   end
 
   def edit
@@ -60,6 +63,30 @@ class OrganizationsController < ApplicationController
     end
 
     redirect_to organization_path(@organization)
+  end
+
+  def return_html
+    puts "================="
+    page_number = params[:page_number].to_i
+    num_notifications = @organization.notifications.count
+
+    respond_to do |format|
+        format.html do 
+          val = num_notifications - PAGE_SIZE * (page_number - 1)
+          puts val
+          
+          if PAGE_SIZE * page_number <= @organization.notifications.count
+            render partial: "notifications/notification", collection: @organization.notifications.slice((page_number - 1) * 5, 5)
+          elsif num_notifications - PAGE_SIZE * (page_number - 1) > 0
+            offset = num_notifications - PAGE_SIZE * (page_number - 1)
+            render partial: "notifications/notification", collection: @organization.notifications.slice((page_number - 1) * 5, page_number * 5 - (5 - offset))
+          else
+            puts "past end, rendering nothing"
+            render json: { flag: true }
+          end
+        end
+      end
+
   end
 
   private

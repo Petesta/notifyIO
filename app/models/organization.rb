@@ -8,7 +8,12 @@ class Organization < ActiveRecord::Base
 
   before_create :set_api_key
 
+  def notifications_for_page(page_number)
+    self.notifications.slice((page_number - 1) * 5, page_number * 5)
+  end
+
   private
+
   def set_api_key
     self.api_key = SecureRandom.hex(6)
   end

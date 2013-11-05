@@ -6,8 +6,12 @@ NotifyIO::Application.routes.draw do
   get "notifications/show"
 
   get "notifications/index"
-
+  
+  #get "organizations/notifications/paginate/:id/:page_number", to: "organizations#return_html"
+  get "organizations/notifications/paginate/:id/", to: "organizations#return_html"
+  
   devise_for :users
+  
   resources :users, only: [:show]
 
   resources :organizations do
