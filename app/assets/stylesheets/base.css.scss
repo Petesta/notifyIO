@@ -2,13 +2,17 @@
 body {
   margin: 0;
   overflow: auto;
+  position: relative;
 }
 
 .side-nav {
+  @include gradient-bg;
+
   background-color: red;
   display: inline;
   float: left;
   height: 1000px;
+  padding-top: 45px;
   position: fixed;
   width: 200px;
   z-index: 100;
