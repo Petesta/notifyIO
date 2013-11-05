@@ -12,7 +12,11 @@
       <%= render partial: 'shared/nav' %>
     </header>
 
-    <div class="container">
+    <section class="side-nav">
+      <%= render partial: 'shared/side_nav' %>
+    </section>
+
+    <div class="main-container">
       <%= render partial: 'shared/flash', locals: {flash: flash} %>
       <%= yield %>
     </div>

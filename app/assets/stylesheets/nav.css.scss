@@ -1,14 +1,15 @@
-html, body { height: 100%; }
 
 header {
   background-color: black;
+  background-image: url(bg_texture_6.png);
+  background-repeat:repeat;
   height: 55px;
   margin-bottom: 15px;
   padding: 5px;
 
   .container {
     color: white;
-    font-family: "Helvetica Neue";  
+    font-family: "Helvetica Neue";
     /*display: inline-block;*/
 
     .logo {
@@ -31,7 +32,7 @@ header {
       float: right;
       margin-left: 10px;
       margin-top: 20px;
-      
+
       .vert-bar {
         color: white;
       }
@@ -42,25 +43,14 @@ header {
     }
   }
 }
- 
-html, body { height: 100%; }
- 
+
 .container {
   margin-bottom: -40px;
   min-height: 100%;
- 
+
+
   &:after {
     content: "";
     display: block;
   }
 }
- 
-footer {
-  background-color: black;
-  color: white;
-  font-family: "Helvetica Neue";
-  line-height: 40px;
-  text-align: center;
-}
- 
-footer, .container:after { height: 40px; }
