@@ -16,10 +16,12 @@
       <%= render partial: 'shared/side_nav' %>
     </section>
 
-    <div class="main-container">
-      <%= render partial: 'shared/flash', locals: {flash: flash} %>
-      <%= yield %>
-    </div>
+    <section class="main-container">
+      <div class="main-wrapper">
+        <%= render partial: 'shared/flash', locals: {flash: flash} %>
+        <%= yield %>
+      </div>
+    </section>
 
     <footer>
       Brought to you by Pete Cruz, Mike Holubowski, Mike Sprague

@@ -1,2 +1,28 @@
-html, body { height: 100%; }
+// html, body { height: 100%; }
+body {
+  margin: 0;
+  overflow: auto;
+}
 
+.side-nav {
+  background-color: red;
+  display: inline;
+  float: left;
+  height: 1000px;
+  position: fixed;
+  width: 200px;
+  z-index: 100;
+}
+
+.main-container {
+  background-color: blue;
+  display: inline;
+  float: left;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+
+  .main-wrapper {
+    margin-left: 200px;
+  }
+}
