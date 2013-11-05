@@ -1,4 +1,8 @@
 // html, body { height: 100%; }
+* {
+  border-sizing: border-box;
+}
+
 body {
   margin: 0;
   overflow: auto;
@@ -6,25 +10,39 @@ body {
 }
 
 .side-nav {
-  @include gradient-bg;
+  @include medium-box;
 
-  background-color: red;
   display: inline;
   float: left;
   height: 1000px;
-  padding-top: 45px;
   position: fixed;
   width: 200px;
-  z-index: 100;
+  z-index: 200;
+
+  .logo {
+    text-decoration: none;
+    text-align: center;
+    background-color: #ccc;
+    box-shadow: inset 0px 0px 6px 0px #aaa;
+    color: #404040;
+    font-size: 25px;
+    display: block;
+    padding: 5px 0;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
 }
 
 .main-container {
   background-color: blue;
   display: inline;
   float: left;
+  padding-top: 45px;
   position: relative;
   width: 100%;
   min-height: 100%;
+
 
   .main-wrapper {
     margin-left: 200px;

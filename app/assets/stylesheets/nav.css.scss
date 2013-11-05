@@ -1,14 +1,12 @@
 header {
-  @include gradient-bg;
+  @include light-box;
 
-  height: 35px;
-  padding: 5px;
+  color: #404040;
   position: fixed;
   width: 100%;
-  z-index: 200;
+  z-index: 100;
 
   .container {
-    color: white;
     font-family: "Helvetica Neue";
 
     .logo {
@@ -16,8 +14,8 @@ header {
       font-size: 40px;
 
       a {
-        color: white;
         text-decoration: none;
+        color: #404040;
       }
 
       &:hover {
@@ -29,15 +27,13 @@ header {
     .user-links {
       color: #9aa9c8;
       float: right;
-      margin-left: 10px;
-      margin-top: 20px;
-
-      .vert-bar {
-        color: white;
-      }
 
       a {
-        color: #9aa9c8;
+        display: inline-block;
+        color: #404040;
+        text-decoration: none;
+        padding: 10px;
+        border-left: 1px solid #cdcdcd;
       }
     }
   }
