@@ -18,7 +18,7 @@ role :all,  fetch(:server_name)
 
 set :ssh_options, {
   user: %(ubuntu),
-  keys: %w(/Users/Petesta/Downloads/NotifyIO-Keypair.pem),
+  keys: %w(../NotifyIO-Keypair.pem),
   forward_agent: true,
   auth_methods: %w(publickey)
 }
