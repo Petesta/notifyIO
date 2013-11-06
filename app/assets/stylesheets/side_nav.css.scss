@@ -46,18 +46,24 @@
 
   .collapsable {
     @include clickable;
-    // &:hover {
-    //   background-color: #fff !important;
-    // }
   }
 
   .collapsable.closed {
-   &:hover {
-    background-color: #f0f0f0;
+
+    .inner {
+      display: none;
+    }
   }
-  .inner {
-    display: none;
+
+  .collapsable.open {
+    background-color: lighten(#222, 3%);
+    &:hover {
+      background-color: lighten(#222, 3%);
+    }
+    .link {
+      font-size: 13px;
+      color: darken($baseFontColor, 5%);
+    }
   }
-}
 
 }
