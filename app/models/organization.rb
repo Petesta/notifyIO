@@ -3,7 +3,7 @@ class Organization < ActiveRecord::Base
   has_many :users, through: :subscriptions
   has_many :notifications
 
-  attr_accessible :description, :name, :subscription_id
+  attr_accessible :description, :name
   validates :name, uniqueness: true
 
   before_create :set_api_key
