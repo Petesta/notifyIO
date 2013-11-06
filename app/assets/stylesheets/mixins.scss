@@ -16,10 +16,9 @@
   box-shadow: 2px 2px 2px -1px #CCC;
 }
 
-@mixin light-box() {
-  background-color: #fff;
-  border: 1px solid #bbb;
-  box-shadow: 2px 2px 2px -1px #CCC;
+@mixin dark-box() {
+  background-color: #222;
+  color: #EBEBEB;
 }
 
 

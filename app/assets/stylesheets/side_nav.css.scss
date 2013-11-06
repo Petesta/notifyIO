@@ -1,0 +1,63 @@
+.side-nav {
+  @include dark-box;
+
+  display: inline;
+  float: left;
+  height: 1000px;
+  position: fixed;
+  width: 200px;
+  z-index: 200;
+
+  .logo {
+    text-decoration: none;
+    text-align: center;
+    // background-color: #ddd;
+    // box-shadow: inset 0px 0px 6px 0px #aaa;
+    // color: #404040;
+    font-size: 25px;
+    display: block;
+    padding: 5px 0;
+    &:hover {
+      background-color: lighten(#222, 6%);
+    }
+  }
+
+  .link-container {
+
+    .link {
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      color: #EBEBEB;
+      border-top: 1px solid rgba(0,0,0,.3);
+      -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+      -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+
+      &:last-child {
+        border-bottom: 1px solid rgba(0,0,0,.3);
+      }
+
+      &:hover {
+        background-color: lighten(#222, 6%);
+      }
+    }
+  }
+
+  .collapsable {
+    @include clickable;
+    // &:hover {
+    //   background-color: #fff !important;
+    // }
+  }
+
+  .collapsable.closed {
+   &:hover {
+    background-color: #f0f0f0;
+  }
+  .inner {
+    display: none;
+  }
+}
+
+}
