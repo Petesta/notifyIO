@@ -66,22 +66,22 @@ class OrganizationsController < ApplicationController
   end
 
   def return_html
-    puts "================="
     page_number = params[:page_number].to_i
     num_notifications = @organization.notifications.count
 
     respond_to do |format|
         format.html do 
           val = num_notifications - PAGE_SIZE * (page_number - 1)
-          puts val
+          #puts val
           
           if PAGE_SIZE * page_number <= @organization.notifications.count
+            #render partial: "notifications/notification", collection: @organization.notifiations_for_page(page_number)
             render partial: "notifications/notification", collection: @organization.notifications.slice((page_number - 1) * 5, 5)
           elsif num_notifications - PAGE_SIZE * (page_number - 1) > 0
             offset = num_notifications - PAGE_SIZE * (page_number - 1)
             render partial: "notifications/notification", collection: @organization.notifications.slice((page_number - 1) * 5, page_number * 5 - (5 - offset))
           else
-            puts "past end, rendering nothing"
+            #puts "past end, rendering nothing"
             render json: { flag: true }
           end
         end

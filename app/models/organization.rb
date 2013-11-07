@@ -12,6 +12,18 @@ class Organization < ActiveRecord::Base
     self.notifications.slice((page_number - 1) * 5, page_number * 5)
   end
 
+  def filter_notifications(notification_type)
+    notifications = self.notifications
+    
+    if notification_type == "success"
+      notications.success
+    elsif notification_type == "error"
+      notifications.error
+    elsif notification_type == "alert"
+      notifications.alert
+    end
+  end
+
   private
 
   def set_api_key

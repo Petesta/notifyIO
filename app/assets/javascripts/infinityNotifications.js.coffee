@@ -10,7 +10,7 @@ $ ->
   $(window).scroll ->
     if ($(window).scrollTop() + $(window).height() > $(document).height() - 100)
       $.ajax {
-        url: "notifications/paginate/#{organizationId()}?page_number=#{current_page}"     # TODO: recommend /notifications/paginate/22?page=2
+        url: "notifications/paginate/#{organizationId()}?page_number=#{current_page}"    
         type: "GET"
         success: (html) ->
           console.log "right above html"
@@ -30,17 +30,3 @@ $ ->
           old_html = html
           console.log current_page
       }
-
-
-
-
-
-
-#def ajax(url, callback)
-#  http = mk_http_request(url, args)
-#  while http.not_finished
-#    ;
-#  callback(http.resull)
-
-
-# notifications/paginate/:page_number?page_size=10k
