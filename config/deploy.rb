@@ -2,10 +2,10 @@ set :application, 'notifyIO'
 set :repo_url, 'https://github.com/Petesta/notifyIO.git'
 set :branch, 'master'
 
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 set :user, 'ubuntu'
-set :deploy_to, '/home/ubuntu/git'
+set :deploy_to, '/home/ubuntu'
 set :use_sudo, false
 set :latest_release_directory, File.join(fetch(:deploy_to), 'current')
 
@@ -21,13 +21,15 @@ set :log_level, :debug
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 set :keep_releases, 5
 
+set :normalize_asset_timestamps, %{public/images public/javascripts public/stylesheets}
+
 namespace :deploy do
 
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
+      execute :touch, release_path.join('tmp/restart.txt')
     end
   end
 
