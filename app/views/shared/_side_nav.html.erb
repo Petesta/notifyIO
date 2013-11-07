@@ -2,16 +2,21 @@
 
 <div class="link-container">
 
-  <div class="link collapsable closed">
-    My Organizations
-    <div class="inner">
-      <% current_user.organizations.each do |org| %>
-        <%= link_to org.name, organization_path(org), class: 'link' %>
-      <% end %>
+  <% if current_user %>
+    <div class="link collapsable closed">
+      My Organizations
+      <div class="inner">
+        <% current_user.organizations.each do |org| %>
+          <%= link_to org.name, organization_path(org), class: 'link' %>
+        <% end %>
+      </div>
     </div>
-  </div>
 
-  <% 5.times do %>
-  <%= link_to 'Test link', '#', class: 'link' %>
+    <% 5.times do %>
+      <%= link_to 'Test link', '#', class: 'link' %>
+    <% end %>
+
+  <% else %>
+    <%= link_to "Login", new_user_session_path, class: 'link' %>
   <% end %>
 </div>
