@@ -10,7 +10,7 @@ set :rvm_ruby_version, '2.0.0-p247'
 # unless any hosts have the primary property set.
 #
 
-IP = '54-237-110-172'
+IP = '54.204.27.193'
 
 set :server_name, ["ec2-#{IP}.compute-1.amazonaws.com"]
 

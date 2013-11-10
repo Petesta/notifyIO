@@ -2,14 +2,14 @@ set :application, 'notifyIO'
 set :repo_url, 'https://github.com/Petesta/notifyIO.git'
 set :branch, 'master'
 
-ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 set :user, 'ubuntu'
 set :deploy_to, '/home/ubuntu'
 set :use_sudo, false
 set :latest_release_directory, File.join(fetch(:deploy_to), 'current')
 
-set :log_level, :debug
+# set :log_level, :debug
 
 # set :format, :pretty
 # set :log_level, :debug
