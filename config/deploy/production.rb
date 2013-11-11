@@ -9,16 +9,20 @@ set :rvm_ruby_version, '2.0.0-p247'
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 #
-set :server_name, %w{ec2-54-211-109-234.compute-1.amazonaws.com}
+
+IP = '54-237-110-172'
+
+set :server_name, ["ec2-#{IP}.compute-1.amazonaws.com"]
 
 role :app, fetch(:server_name)
 role :web, fetch(:server_name)
 role :db,  fetch(:server_name)
 role :all,  fetch(:server_name)
 
+
 set :ssh_options, {
   user: %(ubuntu),
-  keys: %w(../NotifyIO-Keypair.pem),
+  keys: [File.join(ENV["HOME"], ".ssh", "NotifyIO-Keypair.pem")],
   forward_agent: true,
   auth_methods: %w(publickey)
 }
