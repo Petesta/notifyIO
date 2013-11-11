@@ -1,32 +1,51 @@
-current_page = 2
-old_html = ""
+currentPage = 2
+isDone = false
 
 organizationId = -> $('.org-container').data('organization-id')
+
+onShowOrganization = (url_path) ->
+ console.log url_path
+ if /^\/organizations\/\d$/.test(url_path)
+   true
+ else
+   false
+
 
 $ ->
   $el = $('.notification-container')
   listView = new infinity.ListView($el)
 
   $(window).scroll ->
-    if ($(window).scrollTop() + $(window).height() > $(document).height() - 100)
+    if $(window).scrollTop() + $(window).height() == $(document).height()
+      console.log "scrollcheck"
+      if isDone
+        console.log "breaking out of ajax scroll function"
+        return
+
+      console.log '==> start ajax'
       $.ajax {
-        url: "notifications/paginate/#{organizationId()}?page_number=#{current_page}"    
+        url: "notifications/paginate/#{organizationId()}?page_number=#{currentPage}"
         type: "GET"
-        success: (html) ->
-          console.log "right above html"
-          console.log typeof(html)
+        success: (data) ->
+          json = null
+          html = null
 
-          html = try 
-            JSON.parse(html)
+          try
+            json = JSON.parse(data)
           catch SyntaxError
-            html
-          console.log html
+            html = data
 
-          if old_html != html
-            if (html.flag != true)
-              listView.append($(html))
-              console.log "here"
-              current_page += 1
-          old_html = html
-          console.log current_page
+          if json? && json.flag == true
+            console.log "setting global flag to true"
+            isDone = true
+            return
+
+          console.log '==> appending'
+          listView.append($(html))
+          currentPage += 1
+          console.log "current page is now #{currentPage}"
+          console.log '==> appending done'
+
+        error: ->
+          console.log "error in infinityNotifications on ajax call"
       }

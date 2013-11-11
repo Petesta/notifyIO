@@ -15,7 +15,15 @@ NotifyIO::Application.routes.draw do
   resources :users, only: [:show]
 
   resources :organizations do
-    resources :notifications, only: [:show, :index]
+    resources :notifications, only: [:show, :index] do
+      # link_to filter_organization_notifications_path(@organization.id)
+      collection do
+        get 'filter' => 'organizations#return_notification_type', as: 'filter'
+      end
+
+      member do
+      end
+    end
   end
 
   resources :notifications, only: [:create]
