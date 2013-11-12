@@ -5,10 +5,7 @@ organizationId = -> $('.org-container').data('organization-id')
 
 onShowOrganization = (url_path) ->
  console.log url_path
- if /^\/organizations\/\d$/.test(url_path)
-   true
- else
-   false
+ if /^\/organizations\/\d$/.test(url_path) then true else false
 
 
 $ ->
