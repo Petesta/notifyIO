@@ -13,15 +13,7 @@ class Organization < ActiveRecord::Base
   end
 
   def filter_notifications(notification_type)
-    notifications = self.notifications
-    
-    if notification_type == "success"
-      notications.success
-    elsif notification_type == "error"
-      notifications.error
-    elsif notification_type == "alert"
-      notifications.alert
-    end
+    self.notifications.select { |n| n.notification_type == notification_type }
   end
 
   private

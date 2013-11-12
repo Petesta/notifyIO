@@ -86,7 +86,14 @@ class OrganizationsController < ApplicationController
           end
         end
       end
+  end
 
+  def return_notification_type
+    @organization = Organization.find(params[:organization_id])
+    not_type = params[:notification_type].to_s
+    #puts params
+    #puts @organization.filter_notifications(not_type)
+    @notifications = @organization.filter_notifications(not_type)
   end
 
   private

@@ -1,0 +1,5 @@
+<div class="button-container">
+  <a class="filter-btn btn-green" data-button-id="success"> <%= link_to "Success", filter_organization_notifications_path(@organization.id, notification_type: "success") %> </a>
+  <a class="filter-btn btn-red" data-button-id="error"> <%= link_to "Error", filter_organization_notifications_path(@organization.id, notification_type: "error") %> </a>
+  <a class="filter-btn btn-blue" data-button-id="alert"> <%= link_to "Alert", filter_organization_notifications_path(@organization.id, notification_type: "alert") %> </a>
+</div>
