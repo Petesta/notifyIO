@@ -13,3 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require side_nav
+//= require infinity.min.js
