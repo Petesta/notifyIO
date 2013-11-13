@@ -23,10 +23,10 @@
       </div>
     </section>
 
-    <%# unless current_page?(organization_path) %>)
+    <% unless params[:controller] == 'organizations' && params[:action] == 'show' %>
       <footer>
         Brought to you by Pete Cruz, Mike Holubowski, Mike Sprague
       </footer>
-    <%# end %>
+    <% end %>
 </body>
 </html>
