@@ -9,11 +9,13 @@
 
   <hr>
   <h4>Users belonging to this organization:</h4>
-  <ul>
-    <% @organization.users.each do |user| %>
-      <li><%= user.email %></li>
-    <% end %>
-  </ul>
+  <div class="org-users-container">
+    <ul>
+      <% @organization.users.each do |user| %>
+        <li><%= user.email %></li>
+      <% end %>
+    </ul>
+  </div>
 
   <hr>
   <h4>Add new user:</h4>
