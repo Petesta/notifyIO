@@ -8,6 +8,7 @@ namespace :setup do
         end
       end
     end
-
+    before :create, 'rvm:hook'
+    before :create, 'bundler:install'
   end
 end
