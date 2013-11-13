@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Users
-COUNT = 100
+COUNT = 10000
 
 (1..COUNT).to_a.each do |n|
 	u = User.new(email: "admin_#{n}@admin.com", password: 'adminadmin')
