@@ -7,17 +7,19 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Users
-('a'..'d').to_a.each do |n|
+COUNT = 100
+
+(1..COUNT).to_a.each do |n|
 	u = User.new(email: "admin_#{n}@admin.com", password: 'adminadmin')
 	puts "Created user #{n}!" if u.save
 end
 
 
 # Organizations
-('a'..'d').to_a.each do |n|
+(1..COUNT).to_a.each do |n|
 	o = Organization.new(name: "Organization #{n}", description: 'Fancy description of my organization')
 	puts "Created organization #{n}!" if o.save
-	o.users << User.first(3)
+	o.users << User.first(COUNT)
 end
 
 
@@ -28,7 +30,7 @@ def random_notification
 end
 
 Organization.all.each do |org|
-  21.times do
+  COUNT.times do
     org.notifications << random_notification
     puts "Created Notification for organization #{org.id}"
   end

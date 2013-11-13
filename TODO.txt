@@ -1,0 +1,2 @@
+1. Add db:seed task for capistrano deploy 
+2. Fix issue with rendering filtered notification pages in production mode.
