@@ -5,14 +5,35 @@ $gray-border: #ccc;
 }
 
 .notification-container {
-  border: 1px solid black;
-  overflow: scroll;
-  margin: 20px auto;
-  width: 400px;
+  background-color: #e6e6e6;
+  border: 1px solid rgb(201, 194, 194);
+  font-size: 15px;
+  margin: 20px auto 60px auto;
   max-height: 500px;
+  overflow: scroll;
+  padding: 10px;
+  width: 400px;
 
   .notifications {
-    border: 1px solid black;
+    border-radius: 10px;
+    border-top: 1px solid rgba(0,0,0,.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    padding: 3px 0;
     text-align: center;
+
+    &.success {
+      background-color: rgba(0, 128, 0, 0.5);
+    }
+
+    &.alert {
+      background-color: rgba(222, 236, 63, 0.5);
+    }
+
+    &.error {
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+
   }
 }
