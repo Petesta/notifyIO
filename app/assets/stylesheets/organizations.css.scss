@@ -6,7 +6,9 @@
 // This is the CSS for an organizations partial
 .orgs-card {
   border-radius: 10px;
-  overflow:hidden;
+  max-height: 400px;
+  overflow:scroll;
+
   .top-header {
     background-color: #333333;
     padding: 10px 10px 10px 10px;
@@ -65,4 +67,12 @@
   display: inline-block;
   max-height: 200px;
   overflow: scroll;
+}
+
+.spinner {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #ccc;
 }

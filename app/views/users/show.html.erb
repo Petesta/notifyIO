@@ -1,6 +1,11 @@
 <div class="account">
 <div class="title-acct">My Account</div>
 <h3><strong>Email:</strong> <%= @user.email %> </h3>
-<%= render "organizations/list_organizations", user: @user %>
+<%#= render "organizations/list_organizations", user: @user %>
+
+  <div class="notification-container">
+    <%= render @user.notifications %>
+  </div>
+
 
 </div>

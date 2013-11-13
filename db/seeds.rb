@@ -10,16 +10,16 @@
 COUNT = 100
 
 (1..COUNT).to_a.each do |n|
-	u = User.new(email: "admin_#{n}@admin.com", password: 'adminadmin')
-	puts "Created user #{n}!" if u.save
+	u = User.create(email: "admin_#{n}@admin.com", password: 'adminadmin')
+	puts "Created user #{n}!" if n%10 == 0
 end
 
 
 # Organizations
 (1..COUNT).to_a.each do |n|
 	o = Organization.new(name: "Organization #{n}", description: 'Fancy description of my organization')
-	puts "Created organization #{n}!" if o.save
-	o.users << User.first(COUNT)
+	puts "Created organization #{n}!" if n%10 == 0
+	o.users << User.all
 end
 
 
