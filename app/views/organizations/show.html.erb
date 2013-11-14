@@ -4,6 +4,15 @@
   <h4>Description: <%= @organization.description %></h4>
   <hr>
 
+  <%= render "filter_notifications" %>
+  <div class="notification_header"> Notifications: </div>
+  <div class="notification-container">
+    <%= render @notifications %>
+    <div class="spinner">
+      Now Loading
+    </div>
+  </div>
+
   <h4>Api Key:</h4>
   <div><%= @organization.api_key %></div>
 
@@ -26,13 +35,5 @@
     <%= f.submit %>
   <% end %>
 
-  <hr>
-  <%= render "filter_notifications" %>
-  <div class="notification_header"> Notifications: </div>
-  <div class="notification-container">
-    <%= render @notifications %>
-    <div class="spinner">
-      Now Loading
-    </div>
-  </div>
+
 </div>
