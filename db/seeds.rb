@@ -31,7 +31,7 @@ end
   o = Organization.create(name: "Organization #{n}", description: 'Fancy description of my organization')
   puts "Created organization #{n}!" if n%10 == 0
   o.users << User.all
-  
+
 #  org_id = n
 #  org_name = "Organization #{n}"
 #  org_desc = 'Organization created from raw sql'
@@ -55,12 +55,14 @@ end
 
 
 org_count = 0
+i_id = 1
 Organization.all.each do |org|
-  COUNT.times do |n|
-    notifications << random_notification(n + org_count*10, org.id)
-    puts "Generated Notification for organization #{org.id}"
+  (COUNT).times do |n|
+    notifications << random_notification(i_id, org.id)
+    i_id += 1
   end
   org_count += 1
+  puts "Generated Notifications for organization #{org.id}"
 end
 puts users
 puts orgs
@@ -69,5 +71,19 @@ puts orgs
 sql_statment = "INSERT INTO notifications (`id`, `notification_type`, `message`, `organization_id`, `created_at`, `updated_at`) VALUES #{notifications.join(", ")}"
 #puts sql_statment
 
-records_array = ActiveRecord::Base.connection.execute(sql_statement)
-puts records_array
+records_array = ActiveRecord::Base.connection.execute(sql_statment)
+#puts records_array
+                         
+
+# Organizations
+(1..COUNT).to_a.each do |n|
+  o = Organization.create(name: "Organization #{n}", description: 'Fancy description of my organization')
+  puts "Created organization #{n}!" if n%10 == 0
+  o.users << User.all
+
+#  org_id = n
+#  org_name = "Organization #{n}"
+#  org_desc = 'Organization created from raw sql'
+#  orgs << "(#{org_id}, '#{org_name}', '#{org_desc}')"
+end
+

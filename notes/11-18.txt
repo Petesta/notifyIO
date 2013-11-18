@@ -1,0 +1,2 @@
+-Added raw sql for notifications.  Improved seed performance a crazy amount.
+-Orgs are still slow to be added.  improve this
