@@ -7,7 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Users
-COUNT = 1000
+COUNT = 100
+NOTIFICATIONS_PER_ORG = 1000
 users = []
 orgs = []
 subs = []
@@ -78,7 +79,7 @@ org_count = 0
 i_id = 1
 Organization.all.each do |org|
 #    puts "Generated Notification for organization #{org.id}"
-  (COUNT).times do |n|
+  (NOTIFICATIONS_PER_ORG).times do |n|
     notifications << random_notification(i_id, org.id)
     i_id += 1
   end
