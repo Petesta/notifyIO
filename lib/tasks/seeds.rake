@@ -14,11 +14,6 @@ namespace :seeds do
     (LAST_USER_ID..COUNT+LAST_USER_ID).to_a.each do |n|
       u = User.create(email: "admin_#{n}@admin.com", password: 'adminadmin')
       puts "Created user #{n}!" if n%10 == 0
-
-      #  user_id = n
-      #  user_name = "admin_#{n}@admin.com"
-      #  password = 'adminadmin'
-      #  users << "(#{user_id}, '#{user_name}', '#{password}')"
     end
   end
 
@@ -36,11 +31,6 @@ namespace :seeds do
       o = Organization.create(name: "Organization #{n}", description: 'Fancy description of my organization')
       puts "Created organization #{n}!" if n%10 == 0
       o.users << User.all
-
-      #  org_id = n
-      #  org_name = "Organization #{n}"
-      #  org_desc = 'Organization created from raw sql'
-      #  orgs << "(#{org_id}, '#{org_name}', '#{org_desc}')"
     end
   end
 
