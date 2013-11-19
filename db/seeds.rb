@@ -7,9 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Users
-COUNT = 100
+COUNT = 10
 users = []
 orgs = []
+subs = []
 notifications = []
 
 # We're just going to use the same timestamp for all notifications to save the time of generating one each notification.
@@ -28,16 +29,29 @@ end
 
 # Organizations
 (1..COUNT).to_a.each do |n|
-  o = Organization.create(name: "Organization #{n}", description: 'Fancy description of my organization')
-  puts "Created organization #{n}!" if n%10 == 0
-  o.users << User.all
+#  o = Organization.create(name: "Organization #{n}", description: 'Fancy description of my organization')
+#  puts "Created organization #{n}!" if n%10 == 0
+#  o.users << User.all
   
-#  org_id = n
-#  org_name = "Organization #{n}"
-#  org_desc = 'Organization created from raw sql'
-#  orgs << "(#{org_id}, '#{org_name}', '#{org_desc}')"
+  org_id = n + 300
+  org_name = "Organization #{n}"
+  org_desc = 'Organization created from raw sql'
+  orgs << "(#{org_id}, '#{org_name}', '#{org_desc}', '#{TIMESTAMP}', '#{TIMESTAMP}', 'abcdef')"
 end
 
+sql_orgs = "INSERT INTO organizations (`id`, `name`, `description`, `created_at`, `updated_at`, `api_key`) VALUES #{orgs.join(", ")}"
+ActiveRecord::Base.connection.execute(sql_orgs)
+
+# Now we want to add all of the users to the organizations
+(1..COUNT).to_a.each do |n|
+  (1..COUNT).to_a.each do |m|
+    subs << "(#{n}, #{m}, '#{TIMESTAMP}', '#{TIMESTAMP}')"
+  end
+end
+
+sql_subs = "INSERT INTO subscriptions (`organization_id`, `user_id`, `created_at`, `updated_at`) VALUES #{subs.join(", ")}"
+#puts sql_subs
+ActiveRecord::Base.connection.execute(sql_subs)
 
 # Notifications
 def random_notification(id, org_id)
@@ -58,16 +72,16 @@ org_count = 0
 Organization.all.each do |org|
   COUNT.times do |n|
     notifications << random_notification(n + org_count*10, org.id)
-    puts "Generated Notification for organization #{org.id}"
+#    puts "Generated Notification for organization #{org.id}"
   end
   org_count += 1
 end
-puts users
-puts orgs
+#puts users
+#puts orgs
 #puts notifications
 
 sql_statment = "INSERT INTO notifications (`id`, `notification_type`, `message`, `organization_id`, `created_at`, `updated_at`) VALUES #{notifications.join(", ")}"
 #puts sql_statment
 
-records_array = ActiveRecord::Base.connection.execute(sql_statement)
-puts records_array
+ActiveRecord::Base.connection.execute(sql_statement)
+#puts records_array
