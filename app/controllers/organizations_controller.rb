@@ -1,6 +1,6 @@
 class OrganizationsController < ApplicationController
-  before_filter :authenticate_user!
-  before_filter :user_has_access?, :except => [:new, :show]
+  # before_filter :authenticate_user!
+  # before_filter :user_has_access?, :except => [:new, :show]
 
   PAGE_SIZE = 5
 
@@ -70,10 +70,10 @@ class OrganizationsController < ApplicationController
     num_notifications = @organization.notifications.count
 
     respond_to do |format|
-        format.html do 
+        format.html do
           val = num_notifications - PAGE_SIZE * (page_number - 1)
           #puts val
-          
+
           if PAGE_SIZE * page_number <= @organization.notifications.count
             #render partial: "notifications/notification", collection: @organization.notifiations_for_page(page_number)
             render partial: "notifications/notification", collection: @organization.notifications.slice((page_number - 1) * 5, 5)
