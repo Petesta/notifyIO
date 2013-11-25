@@ -10,14 +10,17 @@ set :rvm_ruby_version, '2.0.0-p247'
 # unless any hosts have the primary property set.
 #
 
-IP = '54-234-98-85'
+server_ips = ['54-234-98-85', '54-205-115-40']
+db_ips = ['54-242-173-108']
+app_servers = server_ips.map{|x| "ec2-#{x}.compute-1.amazonaws.com"}
+db_servers = db_ips.map{|x| "ec2-#{x}.compute-1.amazonaws.com"}
 
-set :server_name, ["ec2-#{IP}.compute-1.amazonaws.com"]
+role :app, app_servers
+role :web, app_servers
+role :db,  db_servers
 
-role :app, fetch(:server_name)
-role :web, fetch(:server_name)
-role :db,  fetch(:server_name)
-role :all,  fetch(:server_name)
+# XXX What do we need to do for this guy?
+#role :all,  fetch(:server_name)
 
 
 set :ssh_options, {
