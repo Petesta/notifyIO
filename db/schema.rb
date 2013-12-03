@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131030050959) do
+ActiveRecord::Schema.define(:version => 20131126023022) do
 
   create_table "notifications", :force => true do |t|
     t.string   "notification_type"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(:version => 20131030050959) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end
+
+  add_index "notifications", ["organization_id"], :name => "index_notifications_on_organization_id"
 
   create_table "organizations", :force => true do |t|
     t.string   "name"

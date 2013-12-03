@@ -66,6 +66,7 @@ class OrganizationsController < ApplicationController
   end
 
   def return_html
+    @organization = Organization.find(params[:id])
     page_number = params[:page_number].to_i
     num_notifications = @organization.notifications.count
 
