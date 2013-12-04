@@ -24,15 +24,15 @@ $gray-border: #ccc;
     text-align: center;
 
     &.success {
-      background-color: rgba(0, 128, 0, 0.5);
+      background-color: $success;
     }
 
     &.alert {
-      background-color: rgba(222, 236, 63, 0.5);
+      background-color: $alert;
     }
 
     &.error {
-      background-color: rgba(255, 0, 0, 0.5);
+      background-color: $error;
     }
 
   }

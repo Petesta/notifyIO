@@ -1,0 +1,18 @@
+<div class="organization-dash-wrap">
+  <div class="header">Dashboard</div>
+
+  <div class="dash total">
+    Total
+    <div class="inner"><%= @organization.notifications.count %></div>
+  </div>
+
+  <% types = ['success', 'alert', 'error'] %>
+
+  <% types.each do |type| %>
+    <div class="dash <%= type %>">
+      <%= type %>
+      <div class="inner"><%= @organization.notifications.where(notification_type: type).count %></div>
+    </div>
+  <% end %>
+
+</div>

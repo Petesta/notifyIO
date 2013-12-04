@@ -76,3 +76,34 @@
   text-align: center;
   background-color: #ccc;
 }
+
+.organization-dash-wrap {
+  background-color: #222;
+  text-align: center;
+  padding: 10px;
+  .header {
+    font-size: 22px;
+    color: #ddd;
+  }
+
+  .dash {
+    padding: 10px;
+    display: inline-block;
+
+    &.total {
+      background-color: #ddd;
+    }
+
+    &.success {
+      background-color: $success;
+    }
+
+    &.alert {
+      background-color: $alert;
+    }
+
+    &.error {
+      background-color: $error;
+    }
+  }
+}
