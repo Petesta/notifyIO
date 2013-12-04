@@ -26,6 +26,6 @@ production:
 # TODO: USER NAME AND PW!!!
   username: root
 # host: ec2-54-242-173-108.compute-1.amazonaws.com
-  host: ip-10-180-174-68.ec2.internal
+  host: ip-10-180-218-158.ec2.internal
   port: 3306
 
