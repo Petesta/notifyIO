@@ -16,6 +16,8 @@ gem 'jquery-rails'
 
 gem 'font-awesome-rails'
 
+gem 'ruby-prof'
+
 gem 'will_paginate'
 
 # Use unicorn as the app server
