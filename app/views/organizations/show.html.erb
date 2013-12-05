@@ -22,8 +22,8 @@
   <h4>Users belonging to this organization:</h4>
   <div class="org-users-container">
     <ul>
-      <% @organization.users.each do |user| %>
-        <li><%= user.email %></li>
+      <% @organization.users.pluck(:email).each do |email| %>
+        <li><%= email %></li>
       <% end %>
     </ul>
   </div>
