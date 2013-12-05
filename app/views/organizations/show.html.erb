@@ -22,7 +22,7 @@
   <h4>Users belonging to this organization:</h4>
   <div class="org-users-container">
     <ul>
-      <% @organization.users.pluck(:email).each do |email| %>
+      <% @organization.users.limit(5).pluck(:email).each do |email| %>
         <li><%= email %></li>
       <% end %>
     </ul>
