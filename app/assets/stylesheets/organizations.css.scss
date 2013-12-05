@@ -85,10 +85,14 @@
     font-size: 22px;
     color: #ddd;
   }
+    .sym {
+      color: #ddd;
+    }
 
   .dash {
     padding: 10px;
     display: inline-block;
+
 
     &.total {
       background-color: #ddd;

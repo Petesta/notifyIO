@@ -1,18 +1,24 @@
 <div class="organization-dash-wrap">
   <div class="header">Dashboard</div>
 
-  <div class="dash total">
-    Total
-    <div class="inner"><%= @organization.notifications.count %></div>
-  </div>
 
   <% types = ['success', 'alert', 'error'] %>
 
-  <% types.each do |type| %>
+  <% types.each_with_index do |type, i| %>
     <div class="dash <%= type %>">
       <%= type %>
       <div class="inner"><%= @organization.notifications.where(notification_type: type).count %></div>
     </div>
+    <% if i != types.length - 1 %>
+      <span class="sym">+</span>
+    <% else %>
+      <span class="sym">=</span>
+    <% end %>
   <% end %>
+
+  <div class="dash total">
+    Total
+    <div class="inner"><%= @organization.notifications.count %></div>
+  </div>
 
 </div>
