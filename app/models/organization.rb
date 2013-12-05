@@ -9,7 +9,7 @@ class Organization < ActiveRecord::Base
   before_create :set_api_key
 
   def notifications_for_page(page_number)
-    self.notifications.slice((page_number - 1) * 5, page_number * 5)
+    self.notifications.limit(5).offset((page_number - 1) * 5)
   end
 
   def filter_notifications(notification_type)
