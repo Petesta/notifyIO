@@ -3,7 +3,7 @@ octopus:
   fully_replicated: true 
   production:
     slave1:
-      host: ec2-54-204-124-215.compute-1.amazonaws.com 
+      host: ip-10-182-195-244.ec2.internal
       adapter: mysql2
       database: notify
       username: root
