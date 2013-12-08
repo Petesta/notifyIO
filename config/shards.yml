@@ -1,6 +1,4 @@
 octopus:
-  environments:
-    - production
   replicated: true
   fully_replicated: true 
   production:
