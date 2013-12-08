@@ -1,0 +1,21 @@
+octopus:
+  environments:
+#    - staging
+    - production
+  replicated: true
+  fully_replicated: true 
+#  staging:
+#    slave1:
+#      host: not_our_real_host.rds.amazonaws.com
+#      adapter: mysql2
+#      database: come_work_at_thredup_01
+#      username: admin
+#      password: fake_staging_password
+#      reconnect: false
+  production:
+    slave1:
+      host: ip-10-182-195-244.ec2.internal
+      adapter: mysql2
+      database: notify
+      username: root
+      reconnect: true

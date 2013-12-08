@@ -16,7 +16,7 @@ gem 'jquery-rails'
 
 gem 'font-awesome-rails'
 
-gem 'ruby-prof'
+#gem 'ruby-prof'
 
 gem 'will_paginate'
 
@@ -57,3 +57,6 @@ end
 
 # To use debugger
 # gem 'debugger'
+
+gem 'ar-octopus'
+
