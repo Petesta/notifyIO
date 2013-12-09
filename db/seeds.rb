@@ -34,11 +34,12 @@ puts "Orgs:"
 #  o = Organization.create(name: "Organization #{n}", description: 'Fancy description of my organization')
 #  puts "Created organization #{n}!" if n%10 == 0
 #  o.users << User.all
-  
-  org_id = n 
+
+  org_id = n
   org_name = "Organization #{n}"
   org_desc = 'Organization created from raw sql'
-  orgs << "(#{org_id}, '#{org_name}', '#{org_desc}', '#{TIMESTAMP}', '#{TIMESTAMP}', 'abcdef')"
+  api_key = (0...8).map { (65 + rand(26)).chr }.join
+  orgs << "(#{org_id}, '#{org_name}', '#{org_desc}', '#{TIMESTAMP}', '#{TIMESTAMP}', '#{api_key}')"
 
 end
 
