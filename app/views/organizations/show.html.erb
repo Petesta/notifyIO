@@ -39,13 +39,4 @@
     <%= f.submit %>
   <% end %>
 
-<!-- FAKE QUERIES 
-
-<% rand_string = (0...8).map { (65 + rand(26)).chr }.join %>
-<% 10.times do %>
-  <% sql = "select COUNT(CONCAT(notifications.id, '#{rand_string}', o.id)) from notifications left outer join organizations as o on notifications.organization_id = o.id;" %>
-  <% ActiveRecord::Base.connection.execute(sql) %>
-<% end %>
-
--->
 </div>
