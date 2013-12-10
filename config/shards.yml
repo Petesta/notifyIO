@@ -8,12 +8,12 @@ octopus:
       database: notify
       username: root
       reconnect: true
-#    slave2:
-#      host: ip-10-180-201-253.ec2.internal
-#      adapter: mysql2
-#      database: notify
-#      username: root
-#      reconnect: true
+    slave2:
+      host: ip-10-180-201-253.ec2.internal
+      adapter: mysql2
+      database: notify
+      username: root
+      reconnect: true
 #    slave3:
 #      host: ip-10-180-199-174.ec2.internal
 #      adapter: mysql2
